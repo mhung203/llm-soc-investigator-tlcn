@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "description": "Candidate event grouping windows selected from Phase 2 empirical audits.",
+  "time_basis": "UTC",
+  "grouping_method": "fixed_window_from_first_event",
+  "scenarios": {
+    "ssh_brute_force": {
+      "window_seconds": 30,
+      "event_types": [
+        "ssh_auth_failure",
+        "password_check_failure",
+        "ssh_auth_failure_summary",
+        "ssh_max_retries_exceeded"
+      ],
+      "correlation_keys": "to_be_defined_in_gantt_2.5"
+    },
+    "http_data_exfiltration": {
+      "window_seconds": 60,
+      "event_types": [
+        "http_post",
+        "http_file_transfer",
+        "http_post_context_alert",
+        "file_created",
+        "file_modified"
+      ],
+      "correlation_keys": "to_be_defined_in_gantt_2.5",
+      "flow_id_note": "Same-flow records can span multiple time groups. Flow correlation must be handled separately."
+    }
+  },
+  "ground_truth_used_for_selection": false
+}
