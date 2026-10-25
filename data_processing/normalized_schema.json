@@ -1,12 +1,191 @@
 {
-  "event_id": null,
-  "timestamp": null,
-  "event_type": null,
-  "src_ip": null,
-  "dst_ip": null,
-  "user": null,
-  "host": null,
-  "process": null,
-  "severity": null,
-  "raw_log": null
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SOC Unified Security Event",
+  "description": "Common schema for normalized Wazuh, Suricata and endpoint security events.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "event_type",
+    "source",
+    "source_file",
+    "source_line",
+    "src_ip",
+    "dst_ip",
+    "user",
+    "host",
+    "process",
+    "severity",
+    "raw_log"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "wazuh",
+        "suricata",
+        "endpoint"
+      ]
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "source_line": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "src_ip": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dst_ip": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "user": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "host": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "process": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "severity": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "raw_log": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "agent_ip": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rule_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rule_description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "src_port": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "dst_port": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "proto": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "flow_id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "signature_id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "signature": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "http_hostname": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "http_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ssh_proto_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "original_event_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original event identifier assigned by the source system."
+    },
+    "decoder_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Name of the Wazuh decoder, distinct from the actual process."
+    },
+    "severity_source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "wazuh_rule_level",
+        "suricata_alert_severity",
+        null
+      ],
+      "description": "Original severity scale used by the source system."
+    }
+  },
+  "additionalProperties": true
 }

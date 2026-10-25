@@ -31,7 +31,7 @@ def normalize_timestamp(value):
 
 
 
-def normalize_event(event, line_number):
+def normalize_event(event, line_number, run_id):
     event_type = event.get("event_type")
     alert = event.get("alert") or {}
     if not isinstance(alert, dict):
@@ -47,7 +47,7 @@ def normalize_event(event, line_number):
     flow_id = event.get("flow_id")
 
     return {
-        "event_id": f"suricata_eve:{line_number}",
+        "event_id": f"{run_id}:suricata_eve.json:{line_number}",
         "timestamp": normalize_timestamp(event.get("timestamp")),
         "event_type": f"suricata_{event_type}" if event_type else "suricata_unknown",
         "src_ip": event.get("src_ip"),
@@ -56,6 +56,11 @@ def normalize_event(event, line_number):
         "host": None,
         "process": None,
         "severity": alert.get("severity") if event_type == "alert" else None,
+        "severity_source": (
+        "suricata_alert_severity"
+        if event_type == "alert" and alert.get("severity") is not None
+        else None
+        ),
         "raw_log": json.dumps(event, ensure_ascii=False),
         "source": "suricata",
         "source_file": "suricata_eve.json",
@@ -72,7 +77,7 @@ def normalize_event(event, line_number):
     }
 
 
-def normalize_file(input_path, output_path):
+def normalize_file(input_path, output_path, run_id):
     normalized_count = 0
     skipped_count = 0
 
@@ -95,7 +100,7 @@ def normalize_file(input_path, output_path):
                 skipped_count += 1
                 continue
 
-            normalized = normalize_event(event, line_number)
+            normalized = normalize_event(event, line_number, run_id)
             dst.write(json.dumps(normalized, ensure_ascii=False) + "\n")
             normalized_count += 1
 
@@ -115,7 +120,9 @@ def main():
         print("suricata: SOURCE UNAVAILABLE")
         return
 
-    count, skipped = normalize_file(input_path, output_path)
+    run_dir = Path(args.run_dir)
+    run_id = run_dir.parent.name if run_dir.name == "retry-01" else run_dir.name
+    count, skipped = normalize_file(input_path, output_path, run_id)
 
     print(f"suricata: normalized={count}, skipped={skipped}")
     print(f"output: {output_path}")
