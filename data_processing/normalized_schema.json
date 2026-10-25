@@ -1,0 +1,12 @@
+{
+  "event_id": null,
+  "timestamp": null,
+  "event_type": null,
+  "src_ip": null,
+  "dst_ip": null,
+  "user": null,
+  "host": null,
+  "process": null,
+  "severity": null,
+  "raw_log": null
+}
