@@ -185,6 +185,29 @@
         null
       ],
       "description": "Original severity scale used by the source system."
+    },
+    "security_event_type": {
+      "type": "string",
+      "enum": [
+        "file_created",
+        "file_modified",
+        "http_file_transfer",
+        "http_post",
+        "http_post_context_alert",
+        "network_flow",
+        "other",
+        "password_check_failure",
+        "sensor_statistics",
+        "ssh_auth_failure",
+        "ssh_auth_failure_summary",
+        "ssh_auth_success",
+        "ssh_disconnect",
+        "ssh_max_retries_exceeded",
+        "ssh_network_activity",
+        "ssh_session_closed",
+        "ssh_session_opened"
+      ],
+      "description": "Security-oriented event classification derived from normalized event evidence, without using Ground Truth labels."
     }
   },
   "additionalProperties": true
