@@ -12,7 +12,7 @@
         "ssh_auth_failure_summary",
         "ssh_max_retries_exceeded"
       ],
-      "correlation_keys": "to_be_defined_in_gantt_2.5"
+      "correlation_keys": "data_processing/correlation_key_config.json"
     },
     "http_data_exfiltration": {
       "window_seconds": 60,
@@ -23,7 +23,7 @@
         "file_created",
         "file_modified"
       ],
-      "correlation_keys": "to_be_defined_in_gantt_2.5",
+      "correlation_keys": "data_processing/correlation_key_config.json",
       "flow_id_note": "Same-flow records can span multiple time groups. Flow correlation must be handled separately."
     }
   },

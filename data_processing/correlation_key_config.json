@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "phase": "gantt_2_5",
+  "ground_truth_used_for_selection": false,
+  "ssh_brute_force": {
+    "window_seconds": 30,
+    "primary_keys": [
+      "src_ip",
+      "agent_ip",
+      "user"
+    ],
+    "session_keys": [
+      "agent_ip",
+      "sshd_pid"
+    ],
+    "supporting_keys": [
+      "timestamp",
+      "security_event_type"
+    ],
+    "primary_evidence_type": "ssh_auth_failure",
+    "rules": {
+      "missing_src_ip": "do_not_infer_without_matching_ssh_evidence",
+      "unix_chkpwd_pid": "never_equate_with_sshd_pid",
+      "ssh_pid": "process_context_not_incident_identifier",
+      "window": "fixed_from_first_event",
+      "continuous_timeline_limitation": "cross_run_merging_and_splitting_observed"
+    }
+  },
+  "http_data_exfiltration": {
+    "window_seconds": 60,
+    "primary_keys": [
+      "flow_id"
+    ],
+    "request_direction_keys": [
+      "src_ip",
+      "src_port",
+      "dst_ip",
+      "dst_port"
+    ],
+    "cross_source_keys": [
+      "agent_ip",
+      "src_ip",
+      "timestamp"
+    ],
+    "supporting_keys": [
+      "http_url",
+      "file_size",
+      "sha256"
+    ],
+    "primary_evidence_type": "http_post",
+    "rules": {
+      "flow_scope": "suricata_events_only",
+      "direction": "derive_from_http_post_request",
+      "reverse_direction": "response_not_new_exfiltration",
+      "fim_link": "matching_host_and_within_60_seconds",
+      "size_match": "supporting_evidence_only",
+      "sha256": "requires_independent_payload_hash",
+      "missing_flow_id": "do_not_infer_flow_id",
+      "unmatched_fim": "keep_unlinked",
+      "ex001_limitation": "fim_and_post_not_within_60_seconds"
+    }
+  }
+}
