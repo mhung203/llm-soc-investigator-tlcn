@@ -1,0 +1,103 @@
+{
+  "run_id": "EX-001",
+  "reference_count": 10,
+  "reference_validation": "passed",
+  "semantic_validation": "validated",
+  "references": [
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 2,
+      "event_id": "1791581655.140916",
+      "timestamp": "2026-10-09T21:34:15.036+0000",
+      "label": "supporting_evidence",
+      "reason": "FIM ghi nhận tạo file nguồn"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 76,
+      "event_id": "1791581655.140916",
+      "timestamp": "2026-10-09T21:34:15.036+0000",
+      "label": "supporting_evidence",
+      "reason": "FIM ghi nhận tạo file nguồn"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 1,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:19:41.993218+0700",
+      "label": "attack_evidence",
+      "reason": "Suricata ghi nhận payload 89 byte"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 2,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:22:33.293645+0700",
+      "label": "attack_evidence",
+      "reason": "HTTP POST /upload từ Linux-01 sang Kali"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 3,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:22:33.293989+0700",
+      "label": "supporting_evidence",
+      "reason": "Flow HTTP POST phiên thứ nhất trong cửa sổ EX-001"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 4,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:36:00.160887+0700",
+      "label": "attack_evidence",
+      "reason": "Suricata ghi nhận payload 89 byte"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 5,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:40:33.243364+0700",
+      "label": "attack_evidence",
+      "reason": "HTTP POST /upload từ Linux-01 sang Kali"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 6,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:40:33.243544+0700",
+      "label": "supporting_evidence",
+      "reason": "Flow HTTP POST phiên thứ hai trong cửa sổ EX-001"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 7,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:41:50.724705+0700",
+      "label": "attack_evidence",
+      "reason": "Suricata ghi nhận payload 89 byte"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 8,
+      "event_id": null,
+      "timestamp": "2026-10-10T04:41:50.725137+0700",
+      "label": "attack_evidence",
+      "reason": "HTTP POST /upload từ Linux-01 sang Kali"
+    }
+  ],
+  "semantic_review": {
+    "status": "validated",
+    "validated_at_utc": "2026-10-22T16:59:49.816105+00:00",
+    "notes": "135 records semantically reviewed; 6 attack evidence, 4 supporting evidence, 125 noise, 0 uncertain. 10 related references verified. Final consistency audit 14/14 PASS. HTTP POST success supported by HTTP 200 and 89-byte fileinfo; Wazuh FIM confirms source-file creation, not exfiltration detection."
+  }
+}

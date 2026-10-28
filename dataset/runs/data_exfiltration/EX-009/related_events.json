@@ -1,0 +1,58 @@
+{
+  "run_id": "EX-009",
+  "reference_count": 5,
+  "reference_validation": "passed",
+  "semantic_validation": "validated",
+  "references": [
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 1,
+      "event_id": "1791583426.179927",
+      "timestamp": "2026-10-09T22:03:46.839+0000",
+      "label": "supporting_evidence",
+      "reason": "FIM ghi nhận tạo file nguồn"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 1,
+      "event_id": "1791583426.179545",
+      "timestamp": "2026-10-09T22:03:46.839+0000",
+      "label": "supporting_evidence",
+      "reason": "FIM ghi nhận tạo file nguồn"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 1,
+      "event_id": null,
+      "timestamp": "2026-10-10T05:03:47.115999+0700",
+      "label": "attack_evidence",
+      "reason": "Suricata ghi nhận payload 89 byte"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 3,
+      "event_id": null,
+      "timestamp": "2026-10-10T05:03:47.116813+0700",
+      "label": "attack_evidence",
+      "reason": "HTTP POST /upload từ Linux-01 sang Kali"
+    },
+    {
+      "source": "suricata",
+      "source_file": "suricata_eve.json",
+      "source_line": 4,
+      "event_id": null,
+      "timestamp": "2026-10-10T05:03:47.116813+0700",
+      "label": "supporting_evidence",
+      "reason": "Dữ liệu phản hồi từ receiver"
+    }
+  ],
+  "semantic_review": {
+    "status": "validated",
+    "validated_at_utc": "2026-10-22T17:39:36.508233+00:00",
+    "notes": "12/12 final checks passed. Two attack and three supporting event references validated against original logs. HTTP POST 89 bytes, HTTP 200, FIM source-file creation and SHA256 consistency confirmed. Suricata SID 2034635 is an informational Python HTTP server banner alert, not exfiltration-specific detection."
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "distinct_source_event_ids": 276,
+  "incident_shared_evidence_ids": {
+    "INC-EX-126a741cd41ae18b": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1"
+    ],
+    "INC-EX-1a78e93d876a986d": [
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-008:alerts.json:1",
+      "EX-008:archives.json:1",
+      "EX-009:alerts.json:1",
+      "EX-009:archives.json:1"
+    ],
+    "INC-EX-233f03c5dc147047": [
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-008:alerts.json:1",
+      "EX-008:archives.json:1",
+      "EX-009:alerts.json:1",
+      "EX-009:archives.json:1"
+    ],
+    "INC-EX-4a1f771b53fb3928": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1"
+    ],
+    "INC-EX-4f92e456b8d111d1": [
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1"
+    ],
+    "INC-EX-6163ff6e423f544b": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1"
+    ],
+    "INC-EX-6f7240b4ca97411a": [
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-008:alerts.json:1",
+      "EX-008:archives.json:1"
+    ],
+    "INC-EX-9dcc25b2056b00ac": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1"
+    ],
+    "INC-EX-f8039324c5f475a1": [
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1"
+    ]
+  },
+  "interpretation": "Shared FIM is supporting temporal context only. Reuse across incidents must not be counted as independent file events or proof of exfiltration.",
+  "shared_fim_evidence": [
+    {
+      "event_id": "EX-002:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-126a741cd41ae18b",
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-6163ff6e423f544b",
+        "INC-EX-9dcc25b2056b00ac"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-002:archives.json:1",
+      "incident_ids": [
+        "INC-EX-126a741cd41ae18b",
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-6163ff6e423f544b",
+        "INC-EX-9dcc25b2056b00ac"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-003:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-6163ff6e423f544b",
+        "INC-EX-9dcc25b2056b00ac",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-003:archives.json:1",
+      "incident_ids": [
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-6163ff6e423f544b",
+        "INC-EX-9dcc25b2056b00ac",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-004:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-9dcc25b2056b00ac",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-004:archives.json:1",
+      "incident_ids": [
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-9dcc25b2056b00ac",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-005:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-6f7240b4ca97411a",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-005:archives.json:1",
+      "incident_ids": [
+        "INC-EX-4a1f771b53fb3928",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-6f7240b4ca97411a",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-006:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-6f7240b4ca97411a",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-006:archives.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-6f7240b4ca97411a",
+        "INC-EX-f8039324c5f475a1"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-007:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-233f03c5dc147047",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-6f7240b4ca97411a"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-007:archives.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-233f03c5dc147047",
+        "INC-EX-4f92e456b8d111d1",
+        "INC-EX-6f7240b4ca97411a"
+      ],
+      "reference_count": 4,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-008:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-233f03c5dc147047",
+        "INC-EX-6f7240b4ca97411a"
+      ],
+      "reference_count": 3,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-008:archives.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-233f03c5dc147047",
+        "INC-EX-6f7240b4ca97411a"
+      ],
+      "reference_count": 3,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-009:alerts.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-233f03c5dc147047"
+      ],
+      "reference_count": 2,
+      "security_event_type": "file_created",
+      "shared": true
+    },
+    {
+      "event_id": "EX-009:archives.json:1",
+      "incident_ids": [
+        "INC-EX-1a78e93d876a986d",
+        "INC-EX-233f03c5dc147047"
+      ],
+      "reference_count": 2,
+      "security_event_type": "file_created",
+      "shared": true
+    }
+  ],
+  "shared_fim_source_count": 16,
+  "total_source_references": 318
+}

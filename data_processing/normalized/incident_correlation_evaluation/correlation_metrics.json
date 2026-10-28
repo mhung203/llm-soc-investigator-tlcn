@@ -1,0 +1,126 @@
+{
+  "baseline_manifest_sha256": "920a902f71b66b83589f4e3aa760e2cc1c9d694d6d8f738f33e94fa6bcd72b87",
+  "evaluation_stage": "Phase 2 - Correlation Baseline Evaluation",
+  "event_count": 903,
+  "event_selection": {
+    "ground_truth_negative": "noise",
+    "ground_truth_positive": [
+      "attack_evidence",
+      "supporting_evidence"
+    ],
+    "predicted_negative": "Not included in frozen incident",
+    "predicted_positive": "Included in frozen incident",
+    "results": {
+      "ALL": {
+        "FN": 49,
+        "FP": 9,
+        "TN": 578,
+        "TP": 267,
+        "f1": 0.90202703,
+        "precision": 0.9673913,
+        "recall": 0.84493671
+      },
+      "HTTP": {
+        "FN": 4,
+        "FP": 9,
+        "TN": 476,
+        "TP": 51,
+        "f1": 0.88695652,
+        "precision": 0.85,
+        "recall": 0.92727273
+      },
+      "SSH": {
+        "FN": 45,
+        "FP": 0,
+        "TN": 102,
+        "TP": 216,
+        "f1": 0.90566038,
+        "precision": 1.0,
+        "recall": 0.82758621
+      }
+    },
+    "unit": "Distinct normalized source event",
+    "unresolved_policy": "Predicted negative"
+  },
+  "ground_truth_evaluation_sha256": "f68635543f5d6916d09e29627be3c4d8962634809764986e4a794cc99cedf6fa",
+  "ground_truth_label_sha256": {
+    "dataset/runs/brute_force/BF-001/event_labels.jsonl": "e261c89e1cfa19758da52319bafeb76a49e90e68a05a1cc7ae8aea2ec3c6e54d",
+    "dataset/runs/brute_force/BF-002/event_labels.jsonl": "41abe9e902cf59458c56779a6b9c63b8da143601a370ea97429fafca4574c46c",
+    "dataset/runs/brute_force/BF-003/event_labels.jsonl": "4b3cf8afc67cc30c12e44b5722c0a26aff7cb60af00212f3b42f91216d578417",
+    "dataset/runs/brute_force/BF-004/event_labels.jsonl": "3385ec626267068e58a3c8c683e8fafa531622cfb20a638837be5693df9baf0a",
+    "dataset/runs/brute_force/BF-005/event_labels.jsonl": "84e9a3d6e592dbd59c7ec7c3cfe708977ccb832eadcb69415a8b391a392ffaa2",
+    "dataset/runs/brute_force/BF-006/event_labels.jsonl": "a12b88b9e8db43cf132ea12653a51560681813214ce44b2148bd5e0c85a6d5f3",
+    "dataset/runs/brute_force/BF-007/event_labels.jsonl": "eaf65f0adf8a53837326ead6a9ad24092de1c9c97fde39b2700bcea27f75aae4",
+    "dataset/runs/brute_force/BF-008/event_labels.jsonl": "01b2f60724a344e15bdd6ba7abe9352b0472eb0efb02121d4898a79897c6f127",
+    "dataset/runs/brute_force/BF-009/event_labels.jsonl": "4fe3b289b6c8934a7ad6749964fb1fee51f0a9b01f20f913f962b6262bf73d48",
+    "dataset/runs/brute_force/BF-010/event_labels.jsonl": "6fa5a2c1a89a7656c1f08cb933250bea88ffa67b861b36b5b9a661394ee4ead4",
+    "dataset/runs/data_exfiltration/EX-001/retry-01/event_labels.jsonl": "af1e743d2540d55a391e12b1410a0e5ed35d7ea751a845a77eebb26072181ab1",
+    "dataset/runs/data_exfiltration/EX-002/event_labels.jsonl": "d3dcaee01f51fd22fb08d9d8616836343b6b698d15aca229443b26be15b4f981",
+    "dataset/runs/data_exfiltration/EX-003/event_labels.jsonl": "d3b77877aedfe1047fc6bd8d27b7150fbcf5aba8f17a8c5eecf0d62b851d3a92",
+    "dataset/runs/data_exfiltration/EX-004/event_labels.jsonl": "bd2194a84f6562a3771e2bc55501265b33e7c74745fc73d93438d4cda77ebe1c",
+    "dataset/runs/data_exfiltration/EX-005/event_labels.jsonl": "bac5faac1587e41a17cb91be0fa66130e48b0f933b24e4a430496adc9396876e",
+    "dataset/runs/data_exfiltration/EX-006/event_labels.jsonl": "dafebb6895699e2525c80ee7c474d40d09d3b54d0ef4cb6aa23830d03d572c8d",
+    "dataset/runs/data_exfiltration/EX-007/event_labels.jsonl": "7406ed0794d2909a39602f9761d9d38f31f58b7c5a7a37f03c1c9fef24e5d4c8",
+    "dataset/runs/data_exfiltration/EX-008/event_labels.jsonl": "964ec7c7448067645a98af95d98c975678aec1528dc54397ee0d72186571b193",
+    "dataset/runs/data_exfiltration/EX-009/event_labels.jsonl": "1503f7bda646d1979fcfb350c2b96dca476ebca03dd7c515362180c5a15f223d",
+    "dataset/runs/data_exfiltration/EX-010/event_labels.jsonl": "b34b7b68ef95d31b93e7aed5f98c1c0e1c45807081f1cc7f29ebeec17012d267"
+  },
+  "incident_count": 21,
+  "limitations": [
+    "Event Selection metrics do not measure pairwise grouping.",
+    "Pairwise grouping covers 141 records, not all 903 events.",
+    "Different SSH PIDs may legitimately belong to one activity incident.",
+    "The 90 pairwise false positives do not establish an activity-level error.",
+    "Some source records can represent the same underlying log occurrence.",
+    "HTTP flow grouping does not independently prove exfiltration success.",
+    "Supporting evidence and shared FIM context are not fully assessed by pairwise metrics.",
+    "These metrics are a Phase 2 baseline and must be reassessed in Gantt 5.4."
+  ],
+  "planned_reassessment": "Gantt 5.4 - Final Correlation Evaluation",
+  "report_version": "2.7.12-v1",
+  "source_identity_pairwise": {
+    "eligible_record_count": 141,
+    "http_reference_identity": "raw Suricata flow_id",
+    "http_tx_id_imputed": false,
+    "known_cross_identity_incident": "INC-BF-f1c3efe44c59fc5d",
+    "known_cross_identity_pairs": 90,
+    "reference_group_count": 22,
+    "results": {
+      "ALL": {
+        "FN": 0,
+        "FP": 90,
+        "TN": 9215,
+        "TP": 565,
+        "candidate_pairs": 9870,
+        "f1": 0.92622951,
+        "precision": 0.86259542,
+        "recall": 1.0,
+        "records": 141
+      },
+      "HTTP": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 498,
+        "TP": 30,
+        "candidate_pairs": 528,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "records": 33
+      },
+      "SSH": {
+        "FN": 0,
+        "FP": 90,
+        "TN": 5153,
+        "TP": 535,
+        "candidate_pairs": 5778,
+        "f1": 0.92241379,
+        "precision": 0.856,
+        "recall": 1.0,
+        "records": 108
+      }
+    },
+    "ssh_reference_identity": "agent_ip + raw sshd PID",
+    "unit": "Unordered pair of eligible source records"
+  }
+}

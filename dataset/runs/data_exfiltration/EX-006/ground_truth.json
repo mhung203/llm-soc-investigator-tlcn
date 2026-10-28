@@ -1,0 +1,20 @@
+{
+  "run_id": "EX-006",
+  "scenario": "synthetic_http_data_exfiltration",
+  "result": "success",
+  "source_ip": "192.168.186.186",
+  "destination_ip": "192.168.186.185",
+  "destination_port": 8081,
+  "source_file": "/home/kali/exfil-lab/EX-006.txt",
+  "destination_file": "/home/kali/exfil-lab/received/EX-006.txt",
+  "file_size_bytes": 89,
+  "sha256_source": "7111d2b301f3a05b1a46a6155d17b492ecd48593c43faa9d5de910425b86b287",
+  "sha256_destination": "7111d2b301f3a05b1a46a6155d17b492ecd48593c43faa9d5de910425b86b287",
+  "http_response": "200 OK",
+  "start_time": "2026-10-09T22:02:52Z",
+  "end_time": "2026-10-09T22:03:03Z",
+  "wazuh_alert_count": 10,
+  "wazuh_archive_count": 31,
+  "suricata_event_count": 4,
+  "note": "Wazuh FIM indicates file changes, not direct exfiltration detection. Log counts may include noise."
+}

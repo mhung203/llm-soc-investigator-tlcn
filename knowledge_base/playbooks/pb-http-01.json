@@ -1,0 +1,41 @@
+{
+  "behavior": "Potential transfer of data using HTTP POST and related network/file evidence.",
+  "document_id": "PB-HTTP-01",
+  "document_type": "investigation_playbook",
+  "evidence_to_check": [
+    "http_post",
+    "http_file_transfer",
+    "file_created",
+    "http_post_context_alert"
+  ],
+  "gantt_task": "3.3",
+  "ground_truth_required_for_retrieval": false,
+  "human_approval_required": true,
+  "insufficient_evidence_conditions": [
+    "HTTP POST alone does not prove malicious exfiltration.",
+    "File creation alone does not prove that the file was transferred.",
+    "An informational HTTP server alert is not exfiltration-specific evidence.",
+    "Byte count alone does not prove the content or sensitivity of transferred data."
+  ],
+  "investigation_steps": [
+    "Verify HTTP POST records using original Event IDs.",
+    "Match HTTP events and fileinfo using the original network flow ID.",
+    "Review source, destination, transfer direction and available byte counts.",
+    "Distinguish file creation from evidence of transmission.",
+    "Determine whether receiver confirmation or file integrity evidence exists.",
+    "Verify whether the transfer used a non-C2 channel before confirming T1048.003.",
+    "Separate informational alerts from evidence of data exfiltration."
+  ],
+  "knowledge_is_incident_evidence": false,
+  "recommendations": [
+    "Review network destinations and expected business traffic.",
+    "Preserve flow, HTTP and file metadata for analyst verification.",
+    "Consider containment only after policy-based human approval."
+  ],
+  "scenario": "http_data_exfiltration",
+  "schema_version": "1.0",
+  "technique": [
+    "T1048.003"
+  ],
+  "title": "HTTP Data Exfiltration Investigation"
+}

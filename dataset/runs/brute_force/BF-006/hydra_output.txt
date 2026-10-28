@@ -1,0 +1,12 @@
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-10-06 20:07:37
+[DATA] max 1 task per 1 server, overall 1 task, 5 login tries (l:1/p:5), ~5 tries per task
+[DATA] attacking ssh://192.168.186.186:22/
+[ATTEMPT] target 192.168.186.186 - login "kali" - pass "wrongpass01" - 1 of 5 [child 0] (0/0)
+[ATTEMPT] target 192.168.186.186 - login "kali" - pass "wrongpass02" - 2 of 5 [child 0] (0/0)
+[ATTEMPT] target 192.168.186.186 - login "kali" - pass "wrongpass03" - 3 of 5 [child 0] (0/0)
+[ATTEMPT] target 192.168.186.186 - login "kali" - pass "wrongpass04" - 4 of 5 [child 0] (0/0)
+[ATTEMPT] target 192.168.186.186 - login "kali" - pass "wrongpass05" - 5 of 5 [child 0] (0/0)
+1 of 1 target completed, 0 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-10-06 20:07:51

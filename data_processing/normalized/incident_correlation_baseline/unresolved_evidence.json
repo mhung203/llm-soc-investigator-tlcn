@@ -1,0 +1,178 @@
+[
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-001:archives.json:14"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T18:16:06.102000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-001:archives.json:17"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T18:16:20.104000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-001:archives.json:41"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T18:22:16.201000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-001:archives.json:43"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T18:22:16.242000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-002:archives.json:10"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:16:37.070000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-002:archives.json:13"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:16:37.112000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-003:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:53:05.675000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-003:archives.json:4"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:53:05.718000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-004:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:53:35.683000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-004:archives.json:2"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:53:35.725000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-005:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:54:09.697000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-005:archives.json:4"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:54:09.701000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-006:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:54:41.701000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-006:archives.json:3"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:54:41.744000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-007:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:55:09.708000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-007:archives.json:2"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:55:09.709000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-008:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:55:41.720000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-008:archives.json:3"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:55:41.763000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-009:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:56:11.728000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-009:archives.json:2"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:56:11.729000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-010:archives.json:1"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:56:45.737000+00:00"
+  },
+  {
+    "category": "disconnect_evidence",
+    "event_ids": [
+      "BF-010:archives.json:2"
+    ],
+    "reason": "no_matching_ssh_process",
+    "timestamp": "2026-10-09T19:56:45.737000+00:00"
+  }
+]

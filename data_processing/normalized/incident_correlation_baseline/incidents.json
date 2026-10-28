@@ -1,0 +1,2971 @@
+[
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: unmatched",
+    "end_time": "2026-10-09T21:22:33.293645+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "469439295114597",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-001:suricata_eve.json:1",
+      "EX-001:suricata_eve.json:2"
+    ],
+    "incident_id": "INC-EX-5dfc4cc4e7a1d247",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "No FIM activity satisfied the configured 60-second correlation rule."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T21:19:41.993218+00:00",
+    "timeline": [
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-001:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T21:19:41.993218+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-001:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T21:22:33.293645+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: unmatched",
+    "end_time": "2026-10-09T21:40:33.243364+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "1384299605536744",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-001:suricata_eve.json:4",
+      "EX-001:suricata_eve.json:5"
+    ],
+    "incident_id": "INC-EX-435713b2730c580a",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "No FIM activity satisfied the configured 60-second correlation rule."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T21:36:00.160887+00:00",
+    "timeline": [
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-001:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T21:36:00.160887+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-001:suricata_eve.json:5"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T21:40:33.243364+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: unmatched",
+    "end_time": "2026-10-09T21:41:50.725137+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "995804804214369",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-001:suricata_eve.json:7",
+      "EX-001:suricata_eve.json:8"
+    ],
+    "incident_id": "INC-EX-73c1c35577923de0",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "No FIM activity satisfied the configured 60-second correlation rule."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T21:41:50.724705+00:00",
+    "timeline": [
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-001:suricata_eve.json:7"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T21:41:50.724705+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-001:suricata_eve.json:8"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T21:41:50.725137+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:01:41.412016+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "587510258676591",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-002:suricata_eve.json:1",
+      "EX-002:suricata_eve.json:2",
+      "EX-002:suricata_eve.json:3",
+      "EX-002:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-126a741cd41ae18b",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:01:41.154000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-002:alerts.json:1",
+          "EX-002:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.154000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-002:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.411825+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-002:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.412016+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-002:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.412016+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-002:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.412016+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:02:35.205188+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "1184517158803135",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-005:suricata_eve.json:1",
+      "EX-005:suricata_eve.json:2",
+      "EX-005:suricata_eve.json:3",
+      "EX-005:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-4a1f771b53fb3928",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:01:41.154000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-002:alerts.json:1",
+          "EX-002:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.154000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-003:alerts.json:1",
+          "EX-003:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.092000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-004:alerts.json:1",
+          "EX-004:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.029000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-005:alerts.json:1",
+          "EX-005:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:34.932000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-005:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:35.205018+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-005:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:35.205188+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-005:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:35.205188+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-005:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:35.205188+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:01:59.372963+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "1016371334322607",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-003:suricata_eve.json:1",
+      "EX-003:suricata_eve.json:2",
+      "EX-003:suricata_eve.json:3",
+      "EX-003:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-6163ff6e423f544b",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:01:41.154000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-002:alerts.json:1",
+          "EX-002:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.154000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-003:alerts.json:1",
+          "EX-003:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.092000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-003:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.372768+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-003:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.372963+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-003:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.372963+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-003:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.372963+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:02:17.297423+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "1868722627771304",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-002:alerts.json:1",
+      "EX-002:archives.json:1",
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-004:suricata_eve.json:1",
+      "EX-004:suricata_eve.json:2",
+      "EX-004:suricata_eve.json:3",
+      "EX-004:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-9dcc25b2056b00ac",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:01:41.154000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-002:alerts.json:1",
+          "EX-002:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:41.154000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-003:alerts.json:1",
+          "EX-003:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.092000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-004:alerts.json:1",
+          "EX-004:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.029000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-004:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.297098+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-004:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.297423+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-004:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.297423+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-004:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.297423+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:02:53.119920+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "851141798510889",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-003:alerts.json:1",
+      "EX-003:archives.json:1",
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-006:suricata_eve.json:1",
+      "EX-006:suricata_eve.json:2",
+      "EX-006:suricata_eve.json:3",
+      "EX-006:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-f8039324c5f475a1",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:01:59.092000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-003:alerts.json:1",
+          "EX-003:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:01:59.092000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-004:alerts.json:1",
+          "EX-004:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.029000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-005:alerts.json:1",
+          "EX-005:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:34.932000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-006:alerts.json:1",
+          "EX-006:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:52.843000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-006:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:53.119340+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-006:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:53.119920+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-006:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:53.119920+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-006:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:53.119920+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:03:11.141526+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "168153952753815",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-004:alerts.json:1",
+      "EX-004:archives.json:1",
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-007:suricata_eve.json:1",
+      "EX-007:suricata_eve.json:2",
+      "EX-007:suricata_eve.json:3",
+      "EX-007:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-4f92e456b8d111d1",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:02:17.029000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-004:alerts.json:1",
+          "EX-004:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:17.029000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-005:alerts.json:1",
+          "EX-005:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:34.932000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-006:alerts.json:1",
+          "EX-006:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:52.843000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-007:alerts.json:1",
+          "EX-007:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:10.863000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-007:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:11.140813+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-007:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:11.141526+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-007:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:11.141526+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-007:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:11.141526+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:03:29.139433+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "689311728079274",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-005:alerts.json:1",
+      "EX-005:archives.json:1",
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-008:alerts.json:1",
+      "EX-008:archives.json:1",
+      "EX-008:suricata_eve.json:1",
+      "EX-008:suricata_eve.json:2",
+      "EX-008:suricata_eve.json:3",
+      "EX-008:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-6f7240b4ca97411a",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:02:34.932000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-005:alerts.json:1",
+          "EX-005:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:34.932000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-006:alerts.json:1",
+          "EX-006:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:52.843000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-007:alerts.json:1",
+          "EX-007:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:10.863000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-008:alerts.json:1",
+          "EX-008:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:28.851000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-008:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:29.138404+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-008:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:29.139433+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-008:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:29.139433+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-008:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:29.139433+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:03:47.116813+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "1534597800376920",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-006:alerts.json:1",
+      "EX-006:archives.json:1",
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-008:alerts.json:1",
+      "EX-008:archives.json:1",
+      "EX-009:alerts.json:1",
+      "EX-009:archives.json:1",
+      "EX-009:suricata_eve.json:1",
+      "EX-009:suricata_eve.json:2",
+      "EX-009:suricata_eve.json:3",
+      "EX-009:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-1a78e93d876a986d",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:02:52.843000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-006:alerts.json:1",
+          "EX-006:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:02:52.843000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-007:alerts.json:1",
+          "EX-007:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:10.863000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-008:alerts.json:1",
+          "EX-008:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:28.851000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-009:alerts.json:1",
+          "EX-009:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:46.839000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-009:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:47.115999+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-009:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:47.116813+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-009:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:47.116813+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-009:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:47.116813+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "Suricata HTTP records grouped by flow_id with one HTTP POST anchor. Request and response directions are determined relative to POST. Wazuh FIM is attached only when its host and timestamp meet the configured 60-second rule. FIM link status: matched",
+    "end_time": "2026-10-09T22:04:05.086675+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.185",
+      "flow_id": "1272344950948545",
+      "http_url": "/upload",
+      "src_ip": "192.168.186.186",
+      "sshd_pids": [],
+      "user": null
+    },
+    "evidence_event_ids": [
+      "EX-007:alerts.json:1",
+      "EX-007:archives.json:1",
+      "EX-008:alerts.json:1",
+      "EX-008:archives.json:1",
+      "EX-009:alerts.json:1",
+      "EX-009:archives.json:1",
+      "EX-010:alerts.json:1",
+      "EX-010:archives.json:1",
+      "EX-010:suricata_eve.json:1",
+      "EX-010:suricata_eve.json:2",
+      "EX-010:suricata_eve.json:3",
+      "EX-010:suricata_eve.json:4"
+    ],
+    "incident_id": "INC-EX-233f03c5dc147047",
+    "limitations": [
+      "HTTP POST and related Suricata evidence do not by themselves prove confidential data exfiltration.",
+      "FIM is linked by host and temporal proximity; file-content identity and successful transfer are not independently verified."
+    ],
+    "scenario": "http_data_exfiltration",
+    "start_time": "2026-10-09T22:03:10.863000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-007:alerts.json:1",
+          "EX-007:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:10.863000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-008:alerts.json:1",
+          "EX-008:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:28.851000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-009:alerts.json:1",
+          "EX-009:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:03:46.839000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "EX-010:alerts.json:1",
+          "EX-010:archives.json:1"
+        ],
+        "link_basis": "same_agent_ip_and_pre_post_60_seconds",
+        "role": "supporting",
+        "security_event_type": "file_created",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:04:04.794000+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-010:suricata_eve.json:1"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:04:05.086133+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-010:suricata_eve.json:4"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_file_transfer",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:04:05.086675+00:00"
+      },
+      {
+        "direction": "request",
+        "event_ids": [
+          "EX-010:suricata_eve.json:3"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "primary",
+        "security_event_type": "http_post",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:04:05.086675+00:00"
+      },
+      {
+        "direction": "response",
+        "event_ids": [
+          "EX-010:suricata_eve.json:2"
+        ],
+        "link_basis": "flow_id_and_post_anchor",
+        "role": "supporting",
+        "security_event_type": "http_post_context_alert",
+        "sshd_pid": null,
+        "timestamp": "2026-10-09T22:04:05.086675+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T18:22:40.218000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "213644"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-001:alerts.json:1",
+      "BF-001:alerts.json:10",
+      "BF-001:alerts.json:11",
+      "BF-001:alerts.json:12",
+      "BF-001:alerts.json:2",
+      "BF-001:alerts.json:3",
+      "BF-001:alerts.json:4",
+      "BF-001:alerts.json:5",
+      "BF-001:alerts.json:6",
+      "BF-001:alerts.json:7",
+      "BF-001:alerts.json:8",
+      "BF-001:alerts.json:9",
+      "BF-001:archives.json:42",
+      "BF-001:archives.json:44",
+      "BF-001:archives.json:45",
+      "BF-001:archives.json:46",
+      "BF-001:archives.json:47",
+      "BF-001:archives.json:48",
+      "BF-001:archives.json:49",
+      "BF-001:archives.json:50",
+      "BF-001:archives.json:51",
+      "BF-001:archives.json:52",
+      "BF-001:archives.json:53",
+      "BF-001:archives.json:54",
+      "BF-001:archives.json:55",
+      "BF-001:archives.json:56"
+    ],
+    "incident_id": "INC-BF-1e6f71c7ae1a54b0",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T18:22:16.242000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:1",
+          "BF-001:archives.json:42"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:16.242000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:2",
+          "BF-001:archives.json:44"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:16.242000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:3",
+          "BF-001:archives.json:45"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:18.202000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:4",
+          "BF-001:archives.json:46"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:22.202000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:5",
+          "BF-001:archives.json:47"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:24.203000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:6",
+          "BF-001:archives.json:48"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:28.203000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:7",
+          "BF-001:archives.json:49"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:30.204000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:8",
+          "BF-001:archives.json:50"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:34.205000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:9",
+          "BF-001:archives.json:51"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:34.248000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:10",
+          "BF-001:archives.json:52"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:38.223000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:11",
+          "BF-001:archives.json:53"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:40.213000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:archives.json:54"
+        ],
+        "link_basis": "agent_ip_and_sshd_pid",
+        "role": "supporting",
+        "security_event_type": "ssh_disconnect",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:40.214000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:alerts.json:12",
+          "BF-001:archives.json:55"
+        ],
+        "link_basis": "agent_ip_and_sshd_pid",
+        "role": "supporting",
+        "security_event_type": "ssh_auth_failure_summary",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:40.216000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-001:archives.json:56"
+        ],
+        "link_basis": "agent_ip_and_sshd_pid",
+        "role": "supporting",
+        "security_event_type": "ssh_max_retries_exceeded",
+        "sshd_pid": "213644",
+        "timestamp": "2026-10-09T18:22:40.218000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:17:05.079000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "240100"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-002:alerts.json:1",
+      "BF-002:alerts.json:10",
+      "BF-002:alerts.json:11",
+      "BF-002:alerts.json:12",
+      "BF-002:alerts.json:2",
+      "BF-002:alerts.json:3",
+      "BF-002:alerts.json:4",
+      "BF-002:alerts.json:5",
+      "BF-002:alerts.json:6",
+      "BF-002:alerts.json:7",
+      "BF-002:alerts.json:8",
+      "BF-002:alerts.json:9",
+      "BF-002:archives.json:11",
+      "BF-002:archives.json:12",
+      "BF-002:archives.json:14",
+      "BF-002:archives.json:15",
+      "BF-002:archives.json:16",
+      "BF-002:archives.json:17",
+      "BF-002:archives.json:18",
+      "BF-002:archives.json:19",
+      "BF-002:archives.json:20",
+      "BF-002:archives.json:21",
+      "BF-002:archives.json:25",
+      "BF-002:archives.json:26",
+      "BF-002:archives.json:27",
+      "BF-002:archives.json:28"
+    ],
+    "incident_id": "INC-BF-ff731aa58d633d46",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:16:37.112000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:1",
+          "BF-002:archives.json:11"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:37.112000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:2",
+          "BF-002:archives.json:12"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:37.112000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:3",
+          "BF-002:archives.json:14"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:39.070000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:4",
+          "BF-002:archives.json:15"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:43.073000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:5",
+          "BF-002:archives.json:16"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:47.073000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:6",
+          "BF-002:archives.json:17"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:49.073000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:7",
+          "BF-002:archives.json:18"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:51.074000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:8",
+          "BF-002:archives.json:19"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:55.074000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:9",
+          "BF-002:archives.json:20"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:16:57.075000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:10",
+          "BF-002:archives.json:21"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:17:01.075000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:11",
+          "BF-002:archives.json:25"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:17:03.080000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:alerts.json:12",
+          "BF-002:archives.json:27"
+        ],
+        "link_basis": "agent_ip_and_sshd_pid",
+        "role": "supporting",
+        "security_event_type": "ssh_auth_failure_summary",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:17:05.077000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:archives.json:26"
+        ],
+        "link_basis": "agent_ip_and_sshd_pid",
+        "role": "supporting",
+        "security_event_type": "ssh_disconnect",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:17:05.077000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-002:archives.json:28"
+        ],
+        "link_basis": "agent_ip_and_sshd_pid",
+        "role": "supporting",
+        "security_event_type": "ssh_max_retries_exceeded",
+        "sshd_pid": "240100",
+        "timestamp": "2026-10-09T19:17:05.079000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:53:19.679000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "257739"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-003:alerts.json:1",
+      "BF-003:alerts.json:10",
+      "BF-003:alerts.json:2",
+      "BF-003:alerts.json:3",
+      "BF-003:alerts.json:4",
+      "BF-003:alerts.json:5",
+      "BF-003:alerts.json:6",
+      "BF-003:alerts.json:7",
+      "BF-003:alerts.json:8",
+      "BF-003:alerts.json:9",
+      "BF-003:archives.json:10",
+      "BF-003:archives.json:11",
+      "BF-003:archives.json:12",
+      "BF-003:archives.json:2",
+      "BF-003:archives.json:3",
+      "BF-003:archives.json:5",
+      "BF-003:archives.json:6",
+      "BF-003:archives.json:7",
+      "BF-003:archives.json:8",
+      "BF-003:archives.json:9"
+    ],
+    "incident_id": "INC-BF-5bf94ceb1891c80d",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:53:05.718000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:2",
+          "BF-003:archives.json:3"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:05.718000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:1",
+          "BF-003:archives.json:2"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:05.718000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:3",
+          "BF-003:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:07.676000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:4",
+          "BF-003:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:09.678000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:5",
+          "BF-003:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:11.678000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:6",
+          "BF-003:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:13.677000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:7",
+          "BF-003:archives.json:9"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:15.678000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:8",
+          "BF-003:archives.json:10"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:15.721000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:9",
+          "BF-003:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:17.678000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-003:alerts.json:10",
+          "BF-003:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257739",
+        "timestamp": "2026-10-09T19:53:19.679000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:53:51.689000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "257996"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-004:alerts.json:1",
+      "BF-004:alerts.json:10",
+      "BF-004:alerts.json:2",
+      "BF-004:alerts.json:3",
+      "BF-004:alerts.json:4",
+      "BF-004:alerts.json:5",
+      "BF-004:alerts.json:6",
+      "BF-004:alerts.json:7",
+      "BF-004:alerts.json:8",
+      "BF-004:alerts.json:9",
+      "BF-004:archives.json:11",
+      "BF-004:archives.json:14",
+      "BF-004:archives.json:15",
+      "BF-004:archives.json:16",
+      "BF-004:archives.json:17",
+      "BF-004:archives.json:18",
+      "BF-004:archives.json:19",
+      "BF-004:archives.json:3",
+      "BF-004:archives.json:4",
+      "BF-004:archives.json:5",
+      "BF-004:archives.json:6"
+    ],
+    "incident_id": "INC-BF-237c5aebca190fdc",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:53:37.686000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:1",
+          "BF-004:archives.json:3"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:37.686000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:2",
+          "BF-004:archives.json:4"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:37.688000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:3",
+          "BF-004:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:39.684000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:4",
+          "BF-004:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:39.685000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:5",
+          "BF-004:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:43.685000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:6",
+          "BF-004:archives.json:14"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:43.690000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:archives.json:15"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:45.686000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:7",
+          "BF-004:archives.json:16"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:47.686000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:8",
+          "BF-004:archives.json:17"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:49.687000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:9",
+          "BF-004:archives.json:18"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:49.688000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-004:alerts.json:10",
+          "BF-004:archives.json:19"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "257996",
+        "timestamp": "2026-10-09T19:53:51.689000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:54:23.696000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "258304"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-005:alerts.json:1",
+      "BF-005:alerts.json:10",
+      "BF-005:alerts.json:11",
+      "BF-005:alerts.json:2",
+      "BF-005:alerts.json:3",
+      "BF-005:alerts.json:4",
+      "BF-005:alerts.json:5",
+      "BF-005:alerts.json:6",
+      "BF-005:alerts.json:7",
+      "BF-005:alerts.json:8",
+      "BF-005:alerts.json:9",
+      "BF-005:archives.json:10",
+      "BF-005:archives.json:11",
+      "BF-005:archives.json:12",
+      "BF-005:archives.json:13",
+      "BF-005:archives.json:2",
+      "BF-005:archives.json:3",
+      "BF-005:archives.json:5",
+      "BF-005:archives.json:6",
+      "BF-005:archives.json:7",
+      "BF-005:archives.json:8",
+      "BF-005:archives.json:9"
+    ],
+    "incident_id": "INC-BF-b6654786abcf16a7",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:54:09.701000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:1",
+          "BF-005:archives.json:2"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:09.701000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:2",
+          "BF-005:archives.json:3"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:09.701000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:3",
+          "BF-005:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:11.693000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:4",
+          "BF-005:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:13.694000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:5",
+          "BF-005:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:13.694000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:6",
+          "BF-005:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:15.694000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:7",
+          "BF-005:archives.json:9"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:15.736000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:8",
+          "BF-005:archives.json:10"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:17.695000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:9",
+          "BF-005:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:19.695000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:10",
+          "BF-005:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:21.696000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-005:alerts.json:11",
+          "BF-005:archives.json:13"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258304",
+        "timestamp": "2026-10-09T19:54:23.696000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:55:23.714000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "258577",
+        "258815"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-006:alerts.json:1",
+      "BF-006:alerts.json:10",
+      "BF-006:alerts.json:2",
+      "BF-006:alerts.json:3",
+      "BF-006:alerts.json:4",
+      "BF-006:alerts.json:5",
+      "BF-006:alerts.json:6",
+      "BF-006:alerts.json:7",
+      "BF-006:alerts.json:8",
+      "BF-006:alerts.json:9",
+      "BF-006:archives.json:10",
+      "BF-006:archives.json:11",
+      "BF-006:archives.json:12",
+      "BF-006:archives.json:2",
+      "BF-006:archives.json:4",
+      "BF-006:archives.json:5",
+      "BF-006:archives.json:6",
+      "BF-006:archives.json:7",
+      "BF-006:archives.json:8",
+      "BF-006:archives.json:9",
+      "BF-007:alerts.json:1",
+      "BF-007:alerts.json:2",
+      "BF-007:alerts.json:3",
+      "BF-007:alerts.json:4",
+      "BF-007:alerts.json:5",
+      "BF-007:alerts.json:6",
+      "BF-007:alerts.json:7",
+      "BF-007:alerts.json:8",
+      "BF-007:alerts.json:9",
+      "BF-007:archives.json:10",
+      "BF-007:archives.json:11",
+      "BF-007:archives.json:12",
+      "BF-007:archives.json:3",
+      "BF-007:archives.json:4",
+      "BF-007:archives.json:5",
+      "BF-007:archives.json:6",
+      "BF-007:archives.json:7",
+      "BF-007:archives.json:8",
+      "BF-007:archives.json:9"
+    ],
+    "incident_id": "INC-BF-f1c3efe44c59fc5d",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity.",
+      "Multiple SSH processes share this activity group; they may represent separate real-world incidents."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:54:41.744000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:1",
+          "BF-006:archives.json:2"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:41.744000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:2",
+          "BF-006:archives.json:4"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:41.744000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:3",
+          "BF-006:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:43.701000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:4",
+          "BF-006:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:45.702000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:5",
+          "BF-006:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:47.702000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:6",
+          "BF-006:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:47.703000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:7",
+          "BF-006:archives.json:9"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:47.705000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:8",
+          "BF-006:archives.json:10"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:49.704000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:9",
+          "BF-006:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:51.703000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-006:alerts.json:10",
+          "BF-006:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258577",
+        "timestamp": "2026-10-09T19:54:51.704000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:1",
+          "BF-007:archives.json:3"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:09.711000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:2",
+          "BF-007:archives.json:4"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:09.713000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:3",
+          "BF-007:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:11.709000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:4",
+          "BF-007:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:11.711000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:5",
+          "BF-007:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:13.710000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:6",
+          "BF-007:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:15.711000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:7",
+          "BF-007:archives.json:9"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:17.712000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:8",
+          "BF-007:archives.json:10"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:19.713000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:21.714000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-007:alerts.json:9",
+          "BF-007:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "258815",
+        "timestamp": "2026-10-09T19:55:23.714000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:55:55.725000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "259080"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-008:alerts.json:1",
+      "BF-008:alerts.json:10",
+      "BF-008:alerts.json:11",
+      "BF-008:alerts.json:2",
+      "BF-008:alerts.json:3",
+      "BF-008:alerts.json:4",
+      "BF-008:alerts.json:5",
+      "BF-008:alerts.json:6",
+      "BF-008:alerts.json:7",
+      "BF-008:alerts.json:8",
+      "BF-008:alerts.json:9",
+      "BF-008:archives.json:10",
+      "BF-008:archives.json:11",
+      "BF-008:archives.json:12",
+      "BF-008:archives.json:13",
+      "BF-008:archives.json:2",
+      "BF-008:archives.json:4",
+      "BF-008:archives.json:5",
+      "BF-008:archives.json:6",
+      "BF-008:archives.json:7",
+      "BF-008:archives.json:8",
+      "BF-008:archives.json:9"
+    ],
+    "incident_id": "INC-BF-1c5b168c1fb5aa32",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:55:41.763000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:1",
+          "BF-008:archives.json:2"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:41.763000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:2",
+          "BF-008:archives.json:4"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:41.763000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:3",
+          "BF-008:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:43.722000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:4",
+          "BF-008:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:43.724000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:5",
+          "BF-008:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:45.722000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:6",
+          "BF-008:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:45.723000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:7",
+          "BF-008:archives.json:9"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:47.723000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:8",
+          "BF-008:archives.json:10"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:49.724000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:9",
+          "BF-008:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:51.723000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:10",
+          "BF-008:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:53.724000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-008:alerts.json:11",
+          "BF-008:archives.json:13"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259080",
+        "timestamp": "2026-10-09T19:55:55.725000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:56:27.732000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "259338"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-009:alerts.json:1",
+      "BF-009:alerts.json:10",
+      "BF-009:alerts.json:2",
+      "BF-009:alerts.json:3",
+      "BF-009:alerts.json:4",
+      "BF-009:alerts.json:5",
+      "BF-009:alerts.json:6",
+      "BF-009:alerts.json:7",
+      "BF-009:alerts.json:8",
+      "BF-009:alerts.json:9",
+      "BF-009:archives.json:10",
+      "BF-009:archives.json:11",
+      "BF-009:archives.json:12",
+      "BF-009:archives.json:3",
+      "BF-009:archives.json:4",
+      "BF-009:archives.json:5",
+      "BF-009:archives.json:6",
+      "BF-009:archives.json:7",
+      "BF-009:archives.json:8",
+      "BF-009:archives.json:9"
+    ],
+    "incident_id": "INC-BF-63198062e5fe1c64",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:56:13.729000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:1",
+          "BF-009:archives.json:4"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:13.729000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:2",
+          "BF-009:archives.json:3"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:13.729000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:4",
+          "BF-009:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:15.729000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:3",
+          "BF-009:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:15.729000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:5",
+          "BF-009:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:17.730000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:6",
+          "BF-009:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:19.730000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:7",
+          "BF-009:archives.json:9"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:21.730000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:8",
+          "BF-009:archives.json:10"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:23.731000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:9",
+          "BF-009:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:25.731000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-009:alerts.json:10",
+          "BF-009:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259338",
+        "timestamp": "2026-10-09T19:56:27.732000+00:00"
+      }
+    ]
+  },
+  {
+    "correlation_explanation": "SSH authentication failures grouped by source IP, target agent, user and SSHD process; processes correlated within a 30-second activity window. Supporting context linked by explicit process keys or unique time-proximity candidates.",
+    "end_time": "2026-10-09T19:56:57.741000+00:00",
+    "entities": {
+      "dst_ip": "192.168.186.186",
+      "flow_id": null,
+      "http_url": null,
+      "src_ip": "192.168.186.185",
+      "sshd_pids": [
+        "259613"
+      ],
+      "user": "kali"
+    },
+    "evidence_event_ids": [
+      "BF-010:alerts.json:1",
+      "BF-010:alerts.json:10",
+      "BF-010:alerts.json:2",
+      "BF-010:alerts.json:3",
+      "BF-010:alerts.json:4",
+      "BF-010:alerts.json:5",
+      "BF-010:alerts.json:6",
+      "BF-010:alerts.json:7",
+      "BF-010:alerts.json:8",
+      "BF-010:alerts.json:9",
+      "BF-010:archives.json:10",
+      "BF-010:archives.json:11",
+      "BF-010:archives.json:12",
+      "BF-010:archives.json:3",
+      "BF-010:archives.json:4",
+      "BF-010:archives.json:5",
+      "BF-010:archives.json:6",
+      "BF-010:archives.json:7",
+      "BF-010:archives.json:8",
+      "BF-010:archives.json:9"
+    ],
+    "incident_id": "INC-BF-98cb8b9d04235ff3",
+    "limitations": [
+      "Failure log evidence is not necessarily one-to-one with authentication attempts.",
+      "Supporting PAM links indicate temporal proximity, not proven causal identity."
+    ],
+    "scenario": "ssh_brute_force",
+    "start_time": "2026-10-09T19:56:45.739000+00:00",
+    "timeline": [
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:1",
+          "BF-010:archives.json:3"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:45.739000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:2",
+          "BF-010:archives.json:4"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:45.741000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:3",
+          "BF-010:archives.json:5"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:47.737000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:4",
+          "BF-010:archives.json:6"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:49.739000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:5",
+          "BF-010:archives.json:7"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:51.740000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:6",
+          "BF-010:archives.json:8"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:51.741000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:7",
+          "BF-010:archives.json:9"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:53.741000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:8",
+          "BF-010:archives.json:10"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:53.741000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:10",
+          "BF-010:archives.json:12"
+        ],
+        "link_basis": "host_user_temporal_proximity",
+        "role": "supporting",
+        "security_event_type": "password_check_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:57.741000+00:00"
+      },
+      {
+        "direction": null,
+        "event_ids": [
+          "BF-010:alerts.json:9",
+          "BF-010:archives.json:11"
+        ],
+        "link_basis": "agent_ip_sshd_pid_src_ip_user",
+        "role": "primary",
+        "security_event_type": "ssh_auth_failure",
+        "sshd_pid": "259613",
+        "timestamp": "2026-10-09T19:56:57.741000+00:00"
+      }
+    ]
+  }
+]

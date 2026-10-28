@@ -1,0 +1,140 @@
+{
+  "distinct_incident_source_ids": 276,
+  "evaluation_basis": "frozen_incident_snapshot",
+  "event_label_file_sha256": {
+    "dataset/runs/brute_force/BF-001/event_labels.jsonl": "e261c89e1cfa19758da52319bafeb76a49e90e68a05a1cc7ae8aea2ec3c6e54d",
+    "dataset/runs/brute_force/BF-002/event_labels.jsonl": "41abe9e902cf59458c56779a6b9c63b8da143601a370ea97429fafca4574c46c",
+    "dataset/runs/brute_force/BF-003/event_labels.jsonl": "4b3cf8afc67cc30c12e44b5722c0a26aff7cb60af00212f3b42f91216d578417",
+    "dataset/runs/brute_force/BF-004/event_labels.jsonl": "3385ec626267068e58a3c8c683e8fafa531622cfb20a638837be5693df9baf0a",
+    "dataset/runs/brute_force/BF-005/event_labels.jsonl": "84e9a3d6e592dbd59c7ec7c3cfe708977ccb832eadcb69415a8b391a392ffaa2",
+    "dataset/runs/brute_force/BF-006/event_labels.jsonl": "a12b88b9e8db43cf132ea12653a51560681813214ce44b2148bd5e0c85a6d5f3",
+    "dataset/runs/brute_force/BF-007/event_labels.jsonl": "eaf65f0adf8a53837326ead6a9ad24092de1c9c97fde39b2700bcea27f75aae4",
+    "dataset/runs/brute_force/BF-008/event_labels.jsonl": "01b2f60724a344e15bdd6ba7abe9352b0472eb0efb02121d4898a79897c6f127",
+    "dataset/runs/brute_force/BF-009/event_labels.jsonl": "4fe3b289b6c8934a7ad6749964fb1fee51f0a9b01f20f913f962b6262bf73d48",
+    "dataset/runs/brute_force/BF-010/event_labels.jsonl": "6fa5a2c1a89a7656c1f08cb933250bea88ffa67b861b36b5b9a661394ee4ead4",
+    "dataset/runs/data_exfiltration/EX-001/retry-01/event_labels.jsonl": "af1e743d2540d55a391e12b1410a0e5ed35d7ea751a845a77eebb26072181ab1",
+    "dataset/runs/data_exfiltration/EX-002/event_labels.jsonl": "d3dcaee01f51fd22fb08d9d8616836343b6b698d15aca229443b26be15b4f981",
+    "dataset/runs/data_exfiltration/EX-003/event_labels.jsonl": "d3b77877aedfe1047fc6bd8d27b7150fbcf5aba8f17a8c5eecf0d62b851d3a92",
+    "dataset/runs/data_exfiltration/EX-004/event_labels.jsonl": "bd2194a84f6562a3771e2bc55501265b33e7c74745fc73d93438d4cda77ebe1c",
+    "dataset/runs/data_exfiltration/EX-005/event_labels.jsonl": "bac5faac1587e41a17cb91be0fa66130e48b0f933b24e4a430496adc9396876e",
+    "dataset/runs/data_exfiltration/EX-006/event_labels.jsonl": "dafebb6895699e2525c80ee7c474d40d09d3b54d0ef4cb6aa23830d03d572c8d",
+    "dataset/runs/data_exfiltration/EX-007/event_labels.jsonl": "7406ed0794d2909a39602f9761d9d38f31f58b7c5a7a37f03c1c9fef24e5d4c8",
+    "dataset/runs/data_exfiltration/EX-008/event_labels.jsonl": "964ec7c7448067645a98af95d98c975678aec1528dc54397ee0d72186571b193",
+    "dataset/runs/data_exfiltration/EX-009/event_labels.jsonl": "1503f7bda646d1979fcfb350c2b96dca476ebca03dd7c515362180c5a15f223d",
+    "dataset/runs/data_exfiltration/EX-010/event_labels.jsonl": "b34b7b68ef95d31b93e7aed5f98c1c0e1c45807081f1cc7f29ebeec17012d267"
+  },
+  "evidence_coverage": {
+    "attack_evidence": {
+      "coverage_percent": 100.0,
+      "ground_truth_total": 136,
+      "in_incidents": 136,
+      "unresolved": 0
+    },
+    "noise": {
+      "coverage_percent": 1.5332,
+      "ground_truth_total": 587,
+      "in_incidents": 9,
+      "unresolved": 0
+    },
+    "supporting_evidence": {
+      "coverage_percent": 72.7778,
+      "ground_truth_total": 180,
+      "in_incidents": 131,
+      "unresolved": 22
+    }
+  },
+  "ground_truth_csv_sha256": "c5c26983ce270bd29848c211b1b27909229781bb760984f7af0898768971332c",
+  "ground_truth_event_count": 903,
+  "incident_count": 21,
+  "interpretation_limitations": [
+    "Evidence coverage is not detection precision or recall.",
+    "The dataset contains attack-present runs; no independent negative-run detection benchmark was performed.",
+    "Supporting HTTP context alerts labeled noise remain in some incident timelines.",
+    "Run identifiers were used for offline evaluation only.",
+    "The frozen correlation results were not tuned to labels."
+  ],
+  "merged_incidents": {
+    "INC-BF-f1c3efe44c59fc5d": [
+      "BF-006",
+      "BF-007"
+    ]
+  },
+  "metrics_scope": "evidence_coverage_and_grouping_quality",
+  "noise_event_types": {
+    "http_post_context_alert": 9
+  },
+  "noise_share_in_incident_percent": 3.2609,
+  "primary_evidence_run_coverage": {
+    "covered": 20,
+    "total": 20
+  },
+  "report_version": "gantt-2.7-ground-truth-evaluation-v1",
+  "scenario_results": {
+    "http_data_exfiltration": {
+      "distinct_incident_source_ids": 60,
+      "evidence_coverage": {
+        "attack_evidence": {
+          "covered": 24,
+          "percent": 100.0,
+          "total": 24
+        },
+        "noise": {
+          "covered": 9,
+          "percent": 1.8557,
+          "total": 485
+        },
+        "supporting_evidence": {
+          "covered": 27,
+          "percent": 87.0968,
+          "total": 31
+        }
+      },
+      "ground_truth_events": 540
+    },
+    "ssh_brute_force": {
+      "distinct_incident_source_ids": 216,
+      "evidence_coverage": {
+        "attack_evidence": {
+          "covered": 112,
+          "percent": 100.0,
+          "total": 112
+        },
+        "noise": {
+          "covered": 0,
+          "percent": 0.0,
+          "total": 102
+        },
+        "supporting_evidence": {
+          "covered": 104,
+          "percent": 69.7987,
+          "total": 149
+        }
+      },
+      "ground_truth_events": 363
+    }
+  },
+  "shared_fim_policy": "Count distinct event IDs for coverage; repeated FIM references are not independent observations.",
+  "snapshot_manifest_sha256": "920a902f71b66b83589f4e3aa760e2cc1c9d694d6d8f738f33e94fa6bcd72b87",
+  "split_runs": {
+    "EX-001": [
+      "INC-EX-435713b2730c580a",
+      "INC-EX-5dfc4cc4e7a1d247",
+      "INC-EX-73c1c35577923de0"
+    ]
+  },
+  "supporting_evidence_accounting": {
+    "accounted_percent": 85.0,
+    "in_incidents": 131,
+    "not_selected": 27,
+    "unresolved": 22
+  },
+  "unresolved_event_types": {
+    "ssh_disconnect": 22
+  },
+  "unresolved_source_ids": 22,
+  "unselected_support_event_types": {
+    "file_created": 2,
+    "network_flow": 6,
+    "ssh_network_activity": 19
+  }
+}

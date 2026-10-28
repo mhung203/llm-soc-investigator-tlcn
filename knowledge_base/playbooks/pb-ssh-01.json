@@ -1,0 +1,39 @@
+{
+  "behavior": "Repeated SSH authentication failures consistent with password guessing.",
+  "document_id": "PB-SSH-01",
+  "document_type": "investigation_playbook",
+  "evidence_to_check": [
+    "ssh_auth_failure",
+    "password_check_failure",
+    "ssh_auth_failure_summary",
+    "ssh_max_retries_exceeded",
+    "ssh_disconnect"
+  ],
+  "gantt_task": "3.3",
+  "ground_truth_required_for_retrieval": false,
+  "human_approval_required": true,
+  "insufficient_evidence_conditions": [
+    "Failures without success evidence do not establish account compromise.",
+    "A disconnect event alone does not establish a successful login."
+  ],
+  "investigation_steps": [
+    "Verify incident source events and their original Event IDs.",
+    "Review the SSH authentication timeline and its time window.",
+    "Correlate source IP, destination IP, account and SSH process.",
+    "Check whether repeated failures originate from one or more sessions.",
+    "Search separately for successful authentication evidence.",
+    "Classify observations, unsupported claims and missing evidence."
+  ],
+  "knowledge_is_incident_evidence": false,
+  "recommendations": [
+    "Review affected account and SSH access policies.",
+    "Consider rate limiting, MFA or access restrictions after analyst review.",
+    "Escalate if independent evidence of unauthorized access is found."
+  ],
+  "scenario": "ssh_brute_force",
+  "schema_version": "1.0",
+  "technique": [
+    "T1110.001"
+  ],
+  "title": "SSH Brute Force Investigation"
+}

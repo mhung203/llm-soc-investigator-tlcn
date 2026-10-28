@@ -1,0 +1,43 @@
+{
+  "additional_evidence_to_request": [
+    "Successful SSH authentication records, if available.",
+    "Session establishment and account activity records.",
+    "Independent account owner or administrator confirmation."
+  ],
+  "behavior": "Verification of whether SSH password guessing resulted in unauthorized access.",
+  "document_id": "PB-SSH-02",
+  "document_type": "investigation_playbook",
+  "evidence_to_check": [
+    "ssh_auth_failure",
+    "password_check_failure",
+    "ssh_disconnect",
+    "ssh_max_retries_exceeded"
+  ],
+  "gantt_task": "3.3",
+  "ground_truth_required_for_retrieval": false,
+  "human_approval_required": true,
+  "insufficient_evidence_conditions": [
+    "Authentication failures alone are insufficient.",
+    "Absence of success records in this dataset does not prove no compromise occurred."
+  ],
+  "investigation_steps": [
+    "Confirm the reported authentication failures using source Event IDs.",
+    "Search for accepted authentication on the same target and account.",
+    "Inspect session creation and subsequent activity if logs exist.",
+    "Determine whether the available evidence proves unauthorized access.",
+    "Return insufficient evidence when success or compromise is unverified.",
+    "Request SOC Analyst review before declaring account compromise."
+  ],
+  "knowledge_is_incident_evidence": false,
+  "recommendations": [
+    "Request missing authentication and session logs if needed.",
+    "Review account security and access permissions.",
+    "Do not declare compromise solely from brute-force indicators."
+  ],
+  "scenario": "ssh_brute_force",
+  "schema_version": "1.0",
+  "technique": [
+    "T1110.001"
+  ],
+  "title": "SSH Account Compromise Verification"
+}

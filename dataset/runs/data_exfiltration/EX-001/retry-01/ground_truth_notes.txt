@@ -1,0 +1,24 @@
+run_id: EX-001
+attempt: retry-01
+scenario: Synthetic data exfiltration via HTTP POST
+source_ip: 192.168.186.186
+destination_ip: 192.168.186.185
+destination_port: 8080
+method: POST
+url_path: /upload
+source_file: /home/kali/exfil-lab/EX-001-retry-01.txt
+destination_file: /home/kali/exfil-lab/received/EX-001-retry-01.txt
+file_size_bytes: 89
+sha256: 7b00f50ea03b1530019cfbece1f2a89a3b96834494eb2c45323bd5e4a11283ad
+transfer_result: success
+http_response: 200 OK
+pcap_packets_captured: 26
+suricata_events: 8
+suricata_fileinfo: 3
+suricata_http: 3
+suricata_flow: 2
+wazuh_alerts: 2
+wazuh_raw_events: 125
+relevant_wazuh_rule: 554
+unrelated_wazuh_rule: 550
+notes: Multiple failed HTTP attempts occurred before successful transfer. FIM rule 554 confirms file creation, not direct exfiltration detection. Rule 550 concerns the earlier EX-001-test.txt file.

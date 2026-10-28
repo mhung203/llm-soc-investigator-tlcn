@@ -1,0 +1,70 @@
+{
+  "gantt_task": "3.2",
+  "records": [
+    {
+      "behavior": "Repeated or systematic password guesses against an authentication service such as SSH.",
+      "document_id": "MITRE-T1110.001",
+      "evidence_to_check": [
+        "ssh_auth_failure",
+        "password_check_failure",
+        "ssh_auth_failure_summary",
+        "ssh_max_retries_exceeded",
+        "ssh_disconnect"
+      ],
+      "investigation_focus": [
+        "Review authentication failures and timeline.",
+        "Correlate source, destination, account and SSH process.",
+        "Check separately for successful authentication.",
+        "Do not infer account compromise from failures alone."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "parent_technique": "T1110",
+      "scenario": "ssh_brute_force",
+      "source_last_modified": "2026-05-12",
+      "source_reference": "https://attack.mitre.org/techniques/T1110/001/",
+      "source_version": "1.7",
+      "tactic": "Credential Access",
+      "technique_id": "T1110.001",
+      "technique_name": "Password Guessing"
+    },
+    {
+      "alternative_to_consider": {
+        "condition": "Exfiltration over an existing C2 channel",
+        "source_reference": "https://attack.mitre.org/techniques/T1041/",
+        "technique_id": "T1041"
+      },
+      "behavior": "Potential data exfiltration using an unencrypted non-C2 network protocol such as HTTP.",
+      "document_id": "MITRE-T1048.003",
+      "evidence_to_check": [
+        "http_post",
+        "http_file_transfer",
+        "file_created",
+        "http_post_context_alert"
+      ],
+      "investigation_focus": [
+        "Review HTTP POST and related flow evidence.",
+        "Check file transfer metadata and receiving endpoint.",
+        "Distinguish source-file creation from transfer.",
+        "Do not treat informational HTTP alerts as proof.",
+        "Verify non-C2 channel before asserting this technique."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "parent_technique": "T1048",
+      "scenario": "http_data_exfiltration",
+      "source_last_modified": "2026-09-03",
+      "source_reference": "https://attack.mitre.org/techniques/T1048/003/",
+      "source_version": "2.2",
+      "tactic": "Exfiltration",
+      "technique_id": "T1048.003",
+      "technique_name": "Exfiltration Over Unencrypted Non-C2 Protocol"
+    }
+  ],
+  "schema_version": "1.0",
+  "source": "MITRE ATT&CK Enterprise",
+  "usage_policy": {
+    "ground_truth_used_for_retrieval": false,
+    "knowledge_is_incident_evidence": false,
+    "source_event_ids_required_for_factual_findings": true,
+    "technique_mapping_is_automatic": false
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "document_count": 6,
+  "documents": [
+    {
+      "behavior": "Potential data exfiltration using an unencrypted non-C2 network protocol such as HTTP.",
+      "document_id": "MITRE-T1048.003",
+      "document_type": "mitre_technique",
+      "evidence_to_check": [
+        "http_post",
+        "http_file_transfer",
+        "file_created",
+        "http_post_context_alert"
+      ],
+      "insufficient_evidence_conditions": [],
+      "investigation_steps": [
+        "Review HTTP POST and related flow evidence.",
+        "Check file transfer metadata and receiving endpoint.",
+        "Distinguish source-file creation from transfer.",
+        "Do not treat informational HTTP alerts as proof.",
+        "Verify non-C2 channel before asserting this technique."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "recommendations": [],
+      "scenario": "http_data_exfiltration",
+      "source_document": "mitre/techniques.json",
+      "source_reference": "https://attack.mitre.org/techniques/T1048/003/",
+      "source_sha256": "2f52fd9c19dc13d6a7263c8b10d5bad439298a49eef1d6d83053a1f45555ba8f",
+      "technique": [
+        "T1048.003"
+      ],
+      "title": "Exfiltration Over Unencrypted Non-C2 Protocol"
+    },
+    {
+      "behavior": "Repeated or systematic password guesses against an authentication service such as SSH.",
+      "document_id": "MITRE-T1110.001",
+      "document_type": "mitre_technique",
+      "evidence_to_check": [
+        "ssh_auth_failure",
+        "password_check_failure",
+        "ssh_auth_failure_summary",
+        "ssh_max_retries_exceeded",
+        "ssh_disconnect"
+      ],
+      "insufficient_evidence_conditions": [],
+      "investigation_steps": [
+        "Review authentication failures and timeline.",
+        "Correlate source, destination, account and SSH process.",
+        "Check separately for successful authentication.",
+        "Do not infer account compromise from failures alone."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "recommendations": [],
+      "scenario": "ssh_brute_force",
+      "source_document": "mitre/techniques.json",
+      "source_reference": "https://attack.mitre.org/techniques/T1110/001/",
+      "source_sha256": "2f52fd9c19dc13d6a7263c8b10d5bad439298a49eef1d6d83053a1f45555ba8f",
+      "technique": [
+        "T1110.001"
+      ],
+      "title": "Password Guessing"
+    },
+    {
+      "behavior": "Potential transfer of data using HTTP POST and related network/file evidence.",
+      "document_id": "PB-HTTP-01",
+      "document_type": "investigation_playbook",
+      "evidence_to_check": [
+        "http_post",
+        "http_file_transfer",
+        "file_created",
+        "http_post_context_alert"
+      ],
+      "insufficient_evidence_conditions": [
+        "HTTP POST alone does not prove malicious exfiltration.",
+        "File creation alone does not prove that the file was transferred.",
+        "An informational HTTP server alert is not exfiltration-specific evidence.",
+        "Byte count alone does not prove the content or sensitivity of transferred data."
+      ],
+      "investigation_steps": [
+        "Verify HTTP POST records using original Event IDs.",
+        "Match HTTP events and fileinfo using the original network flow ID.",
+        "Review source, destination, transfer direction and available byte counts.",
+        "Distinguish file creation from evidence of transmission.",
+        "Determine whether receiver confirmation or file integrity evidence exists.",
+        "Verify whether the transfer used a non-C2 channel before confirming T1048.003.",
+        "Separate informational alerts from evidence of data exfiltration."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "recommendations": [
+        "Review network destinations and expected business traffic.",
+        "Preserve flow, HTTP and file metadata for analyst verification.",
+        "Consider containment only after policy-based human approval."
+      ],
+      "scenario": "http_data_exfiltration",
+      "source_document": "playbooks/pb-http-01.json",
+      "source_reference": "playbooks/pb-http-01.json",
+      "source_sha256": "8f2b164401ba7730ce3770c43ce85678e9a6c08866b96dd9d3f36fcd9c1ad8fa",
+      "technique": [
+        "T1048.003"
+      ],
+      "title": "HTTP Data Exfiltration Investigation"
+    },
+    {
+      "behavior": "Repeated SSH authentication failures consistent with password guessing.",
+      "document_id": "PB-SSH-01",
+      "document_type": "investigation_playbook",
+      "evidence_to_check": [
+        "ssh_auth_failure",
+        "password_check_failure",
+        "ssh_auth_failure_summary",
+        "ssh_max_retries_exceeded",
+        "ssh_disconnect"
+      ],
+      "insufficient_evidence_conditions": [
+        "Failures without success evidence do not establish account compromise.",
+        "A disconnect event alone does not establish a successful login."
+      ],
+      "investigation_steps": [
+        "Verify incident source events and their original Event IDs.",
+        "Review the SSH authentication timeline and its time window.",
+        "Correlate source IP, destination IP, account and SSH process.",
+        "Check whether repeated failures originate from one or more sessions.",
+        "Search separately for successful authentication evidence.",
+        "Classify observations, unsupported claims and missing evidence."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "recommendations": [
+        "Review affected account and SSH access policies.",
+        "Consider rate limiting, MFA or access restrictions after analyst review.",
+        "Escalate if independent evidence of unauthorized access is found."
+      ],
+      "scenario": "ssh_brute_force",
+      "source_document": "playbooks/pb-ssh-01.json",
+      "source_reference": "playbooks/pb-ssh-01.json",
+      "source_sha256": "f8a0fb36fbbe0ead9a88a521d9f740e22dd145cdc61d8c919710d29219586a89",
+      "technique": [
+        "T1110.001"
+      ],
+      "title": "SSH Brute Force Investigation"
+    },
+    {
+      "additional_evidence_to_request": [
+        "Successful SSH authentication records, if available.",
+        "Session establishment and account activity records.",
+        "Independent account owner or administrator confirmation."
+      ],
+      "behavior": "Verification of whether SSH password guessing resulted in unauthorized access.",
+      "document_id": "PB-SSH-02",
+      "document_type": "investigation_playbook",
+      "evidence_to_check": [
+        "ssh_auth_failure",
+        "password_check_failure",
+        "ssh_disconnect",
+        "ssh_max_retries_exceeded"
+      ],
+      "insufficient_evidence_conditions": [
+        "Authentication failures alone are insufficient.",
+        "Absence of success records in this dataset does not prove no compromise occurred."
+      ],
+      "investigation_steps": [
+        "Confirm the reported authentication failures using source Event IDs.",
+        "Search for accepted authentication on the same target and account.",
+        "Inspect session creation and subsequent activity if logs exist.",
+        "Determine whether the available evidence proves unauthorized access.",
+        "Return insufficient evidence when success or compromise is unverified.",
+        "Request SOC Analyst review before declaring account compromise."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "recommendations": [
+        "Request missing authentication and session logs if needed.",
+        "Review account security and access permissions.",
+        "Do not declare compromise solely from brute-force indicators."
+      ],
+      "scenario": "ssh_brute_force",
+      "source_document": "playbooks/pb-ssh-02.json",
+      "source_reference": "playbooks/pb-ssh-02.json",
+      "source_sha256": "57ba0e53b1504011efd344bc56be52752e22832c5ae51c02e2d79b9490999fe1",
+      "technique": [
+        "T1110.001"
+      ],
+      "title": "SSH Account Compromise Verification"
+    },
+    {
+      "behavior": "Evidence-grounded triage of correlated SOC incidents.",
+      "document_id": "PB-TRIAGE-01",
+      "document_type": "investigation_playbook",
+      "evidence_to_check": [
+        "ssh_auth_failure",
+        "password_check_failure",
+        "http_post",
+        "http_file_transfer",
+        "file_created"
+      ],
+      "insufficient_evidence_conditions": [
+        "A MITRE document is contextual knowledge, not incident evidence.",
+        "An unsupported hypothesis must not become a confirmed finding.",
+        "Severity must not be asserted without an explained rationale."
+      ],
+      "investigation_steps": [
+        "Identify incident scenario and verify incident metadata.",
+        "Review primary and supporting events in chronological order.",
+        "Check the source Event IDs behind each factual observation.",
+        "Retrieve relevant MITRE references and investigation playbooks.",
+        "Distinguish confirmed observations from hypotheses.",
+        "Assess severity using available evidence and stated assumptions.",
+        "Record missing evidence and uncertain findings explicitly.",
+        "Submit findings and recommendations for SOC Analyst review."
+      ],
+      "mapping_policy": "candidate_requires_evidence_review",
+      "recommendations": [
+        "Preserve original source references and investigation timeline.",
+        "Prioritize analyst verification of high-impact findings.",
+        "Document limitations and outstanding questions in the report."
+      ],
+      "scenario": "both",
+      "source_document": "playbooks/pb-triage-01.json",
+      "source_reference": "playbooks/pb-triage-01.json",
+      "source_sha256": "3ed24c55d0e6f39c383f5519cd749f1f62223a749ba37399cb2dab7c78e897c1",
+      "technique": [
+        "T1110.001",
+        "T1048.003"
+      ],
+      "title": "General Incident Triage"
+    }
+  ],
+  "gantt_task": "3.4",
+  "ground_truth_used_for_retrieval": false,
+  "knowledge_is_incident_evidence": false,
+  "purpose": "Unified knowledge documents for retrieval",
+  "schema_version": "1.0",
+  "source_file_sha256": {
+    "mitre/techniques.json": "2f52fd9c19dc13d6a7263c8b10d5bad439298a49eef1d6d83053a1f45555ba8f",
+    "playbooks/pb-http-01.json": "8f2b164401ba7730ce3770c43ce85678e9a6c08866b96dd9d3f36fcd9c1ad8fa",
+    "playbooks/pb-ssh-01.json": "f8a0fb36fbbe0ead9a88a521d9f740e22dd145cdc61d8c919710d29219586a89",
+    "playbooks/pb-ssh-02.json": "57ba0e53b1504011efd344bc56be52752e22832c5ae51c02e2d79b9490999fe1",
+    "playbooks/pb-triage-01.json": "3ed24c55d0e6f39c383f5519cd749f1f62223a749ba37399cb2dab7c78e897c1",
+    "scope.json": "0f505e9dde39ba678fde5505c6a199045fff81ae904732cb8f560b96bb5bd37e"
+  }
+}

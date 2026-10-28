@@ -1,0 +1,43 @@
+{
+  "behavior": "Evidence-grounded triage of correlated SOC incidents.",
+  "document_id": "PB-TRIAGE-01",
+  "document_type": "investigation_playbook",
+  "evidence_to_check": [
+    "ssh_auth_failure",
+    "password_check_failure",
+    "http_post",
+    "http_file_transfer",
+    "file_created"
+  ],
+  "gantt_task": "3.3",
+  "ground_truth_required_for_retrieval": false,
+  "human_approval_required": true,
+  "insufficient_evidence_conditions": [
+    "A MITRE document is contextual knowledge, not incident evidence.",
+    "An unsupported hypothesis must not become a confirmed finding.",
+    "Severity must not be asserted without an explained rationale."
+  ],
+  "investigation_steps": [
+    "Identify incident scenario and verify incident metadata.",
+    "Review primary and supporting events in chronological order.",
+    "Check the source Event IDs behind each factual observation.",
+    "Retrieve relevant MITRE references and investigation playbooks.",
+    "Distinguish confirmed observations from hypotheses.",
+    "Assess severity using available evidence and stated assumptions.",
+    "Record missing evidence and uncertain findings explicitly.",
+    "Submit findings and recommendations for SOC Analyst review."
+  ],
+  "knowledge_is_incident_evidence": false,
+  "recommendations": [
+    "Preserve original source references and investigation timeline.",
+    "Prioritize analyst verification of high-impact findings.",
+    "Document limitations and outstanding questions in the report."
+  ],
+  "scenario": "both",
+  "schema_version": "1.0",
+  "technique": [
+    "T1110.001",
+    "T1048.003"
+  ],
+  "title": "General Incident Triage"
+}

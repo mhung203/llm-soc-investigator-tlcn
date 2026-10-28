@@ -1,0 +1,287 @@
+{
+  "run_id": "BF-001",
+  "reference_count": 30,
+  "reference_validation": "passed",
+  "semantic_validation": "validated",
+  "references": [
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 1,
+      "event_id": "1791570136.61112",
+      "timestamp": "2026-10-09T18:22:16.242+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 2,
+      "event_id": "1791570136.61527",
+      "timestamp": "2026-10-09T18:22:16.242+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 3,
+      "event_id": "1791570138.62067",
+      "timestamp": "2026-10-09T18:22:18.202+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 4,
+      "event_id": "1791570142.62552",
+      "timestamp": "2026-10-09T18:22:22.202+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 5,
+      "event_id": "1791570144.62967",
+      "timestamp": "2026-10-09T18:22:24.203+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 6,
+      "event_id": "1791570148.63452",
+      "timestamp": "2026-10-09T18:22:28.203+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 7,
+      "event_id": "1791570150.63867",
+      "timestamp": "2026-10-09T18:22:30.204+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 8,
+      "event_id": "1791570154.64352",
+      "timestamp": "2026-10-09T18:22:34.205+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 9,
+      "event_id": "1791570154.64767",
+      "timestamp": "2026-10-09T18:22:34.248+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 10,
+      "event_id": "1791570158.65252",
+      "timestamp": "2026-10-09T18:22:38.223+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 11,
+      "event_id": "1791570160.65667",
+      "timestamp": "2026-10-09T18:22:40.213+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_alert",
+      "source_file": "alerts.json",
+      "source_line": 12,
+      "event_id": "1791570160.66152",
+      "timestamp": "2026-10-09T18:22:40.216+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 14,
+      "event_id": "1791569766.59997",
+      "timestamp": "2026-10-09T18:16:06.102+0000",
+      "label": "supporting_evidence",
+      "reason": "Hoạt động phiên SSH từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 17,
+      "event_id": "1791569780.59997",
+      "timestamp": "2026-10-09T18:16:20.104+0000",
+      "label": "supporting_evidence",
+      "reason": "Hoạt động phiên SSH từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 41,
+      "event_id": "1791570136.59997",
+      "timestamp": "2026-10-09T18:22:16.201+0000",
+      "label": "supporting_evidence",
+      "reason": "Hoạt động phiên SSH từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 42,
+      "event_id": "1791570136.59997",
+      "timestamp": "2026-10-09T18:22:16.242+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 43,
+      "event_id": "1791570136.59997",
+      "timestamp": "2026-10-09T18:22:16.242+0000",
+      "label": "supporting_evidence",
+      "reason": "Hoạt động phiên SSH từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 44,
+      "event_id": "1791570136.61527",
+      "timestamp": "2026-10-09T18:22:16.242+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 45,
+      "event_id": "1791570138.62067",
+      "timestamp": "2026-10-09T18:22:18.202+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 46,
+      "event_id": "1791570142.62552",
+      "timestamp": "2026-10-09T18:22:22.202+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 47,
+      "event_id": "1791570144.62967",
+      "timestamp": "2026-10-09T18:22:24.203+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 48,
+      "event_id": "1791570148.63452",
+      "timestamp": "2026-10-09T18:22:28.203+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 49,
+      "event_id": "1791570150.63867",
+      "timestamp": "2026-10-09T18:22:30.204+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 50,
+      "event_id": "1791570154.64352",
+      "timestamp": "2026-10-09T18:22:34.205+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 51,
+      "event_id": "1791570154.64767",
+      "timestamp": "2026-10-09T18:22:34.248+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 52,
+      "event_id": "1791570158.65252",
+      "timestamp": "2026-10-09T18:22:38.223+0000",
+      "label": "supporting_evidence",
+      "reason": "Cảnh báo xác thực thất bại trong cửa sổ BF"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 53,
+      "event_id": "1791570160.65667",
+      "timestamp": "2026-10-09T18:22:40.213+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 54,
+      "event_id": "1791570160.65667",
+      "timestamp": "2026-10-09T18:22:40.214+0000",
+      "label": "supporting_evidence",
+      "reason": "Hoạt động phiên SSH từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 55,
+      "event_id": "1791570160.66152",
+      "timestamp": "2026-10-09T18:22:40.216+0000",
+      "label": "attack_evidence",
+      "reason": "SSH xác thực thất bại từ Kali"
+    },
+    {
+      "source": "wazuh_raw",
+      "source_file": "archives.json",
+      "source_line": 56,
+      "event_id": "1791570160.66152",
+      "timestamp": "2026-10-09T18:22:40.218+0000",
+      "label": "supporting_evidence",
+      "reason": "PAM ghi nhận SSH vượt giới hạn xác thực trong phiên BF-001"
+    }
+  ],
+  "semantic_review": {
+    "status": "validated",
+    "reviewed_at_utc": "2026-10-22T16:31:48.925372+00:00",
+    "reviewed_event_count": 71,
+    "validated_reference_count": 30,
+    "noise_reviewed": 41,
+    "uncertain_remaining": 0,
+    "notes": "BF-001: 71 event labels reviewed; 30 related references verified against Wazuh logs. Missing Suricata EVE JSON. Hydra attack_success remains unknown. Validation is limited to preserved evidence."
+  }
+}

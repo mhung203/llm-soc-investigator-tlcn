@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-10-22T17:47:59.636628+00:00",
+  "incident_count": 20,
+  "incident_groups": {
+    "BF": {
+      "incidents": 10,
+      "records": 363,
+      "references": 261,
+      "attack_evidence": 112,
+      "supporting_evidence": 149,
+      "noise": 102,
+      "uncertain": 0,
+      "noise_ratio_percent": 28.0992
+    },
+    "EX": {
+      "incidents": 10,
+      "records": 540,
+      "references": 55,
+      "attack_evidence": 24,
+      "supporting_evidence": 31,
+      "noise": 485,
+      "uncertain": 0,
+      "noise_ratio_percent": 89.8148
+    }
+  },
+  "source_records": {
+    "alerts.json": 197,
+    "archives.json": 596,
+    "suricata_eve.json": 110
+  },
+  "total_records": 903,
+  "label_distribution": {
+    "attack_evidence": {
+      "count": 136,
+      "percentage": 15.0609
+    },
+    "supporting_evidence": {
+      "count": 180,
+      "percentage": 19.9336
+    },
+    "noise": {
+      "count": 587,
+      "percentage": 65.0055
+    },
+    "uncertain": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "related_references": 316,
+  "missing_sources": [
+    {
+      "run_id": "BF-001",
+      "source": "suricata_eve.json",
+      "status": "not_available"
+    }
+  ],
+  "methodology_note": "Noise percentages use log-record counts, not deduplicated real-world events. Wazuh alert and raw records may overlap. BF-001 Suricata source was not preserved and is marked unavailable."
+}

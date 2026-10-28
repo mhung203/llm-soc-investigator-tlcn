@@ -1,0 +1,53 @@
+{
+  "code_and_config_sha256": {
+    "correlation/common.py": "7af00adb0bd03aec6946fa606706e3fed032416bd57d06649816a89d9d8e4086",
+    "correlation/engine.py": "ec3f13de7a11b7474850ff74d74e1ae3d72f292c7b7e72a929cc9cb4d2abd123",
+    "correlation/http_rules.py": "97c7acaab3e3aaa85cd02c710e12902eb43aaea759b483fb222af96c56d0d006",
+    "correlation/incident_audit.py": "776b70aabcbbdc75386af4d9334e592843d6eb393b1135f59e08ee697030fe27",
+    "correlation/incident_builder.py": "5ef5522f686fa62f284957f8fd370ee9b64f1d601f41304ea44ab17407558048",
+    "correlation/incident_schema.json": "3b2a8e379c9f7373f052a0e2bbd40365f91f5524ba186012cac6933fc209f7a1",
+    "correlation/ssh_rules.py": "7846dcdd7b64b3ccdef03de5110c9bbac3fcdca6e6428a629700da974a04b8ee",
+    "data_processing/correlation_key_config.json": "0fccb5388234f0295605ad231697b3cd57405c0e34dcac28910a42a92513c2d2",
+    "data_processing/time_window_config.json": "0753b21204ecc3fbd828958e09b2895a4e64fbd052475c9422f8c27536a75f3a"
+  },
+  "distinct_timeline_source_ids": 276,
+  "evaluation_status": "NOT_EVALUATED",
+  "incident_count": 21,
+  "input_event_count": 903,
+  "input_sha256": {
+    "data_processing/normalized/BF-001/classified_events.jsonl": "7850796c7385a1e729c6c93442544e36ed213179e000895f6f3ede36b94f3c03",
+    "data_processing/normalized/BF-002/classified_events.jsonl": "5a1856deffe364b9b6ce311ba5fda61f2c74876cd3c00988cc2844659fdc6fd6",
+    "data_processing/normalized/BF-003/classified_events.jsonl": "0b2f99c6ae5cfc72436c30f9ac1aba15a6ed7bb8dea8f30cf1ff717884fa4da4",
+    "data_processing/normalized/BF-004/classified_events.jsonl": "099c1ff6b8c4ffa4bcfb9500806d487fbfca52784f738d2a01f7c41dec87f4aa",
+    "data_processing/normalized/BF-005/classified_events.jsonl": "9b7a351cca9f13da6751c71cd2b396ee3de3986082c88b9dac646226c2940b62",
+    "data_processing/normalized/BF-006/classified_events.jsonl": "7fa6f2f5f89168bf8d0a0be919f92edb533ee0b2ef1dadbceaa99a0213e9c0c8",
+    "data_processing/normalized/BF-007/classified_events.jsonl": "86b4d2d4ddadacf240a8eb96a0647b8eb1e34500b58cfbd701571ae5c3436a46",
+    "data_processing/normalized/BF-008/classified_events.jsonl": "ebf343c272e5437e2068149a501a3c3a610753ae61a5720d1b6e750420deb9e5",
+    "data_processing/normalized/BF-009/classified_events.jsonl": "17719711b5b1472fda5a2d9f01fd0b0ca18e286a7b424d1af32ad2d5b5cc1e8e",
+    "data_processing/normalized/BF-010/classified_events.jsonl": "fa2d72d25179d77f1e20c8a8c71a73bb6591f3f64a31b5489d0677e0b0edee18",
+    "data_processing/normalized/EX-001/classified_events.jsonl": "bdcf2ae2cada26efe8f20ec657d1c0f5c699081e32da02625073ff9f42bb0f5c",
+    "data_processing/normalized/EX-002/classified_events.jsonl": "cdbf090583210458b12b16a9f443a8fb1b307344a292a69b105c1bd4c8d9cb84",
+    "data_processing/normalized/EX-003/classified_events.jsonl": "71f05de85a4aaf5ad73e6d908736be0062e9ad5af31d78654a7e288bbc6c4147",
+    "data_processing/normalized/EX-004/classified_events.jsonl": "a34c38cf109799c1e36a093b611e07c97bf2061668a7fff54b622ed8a9e866a2",
+    "data_processing/normalized/EX-005/classified_events.jsonl": "4966132757f4a45e803bc736c4040e6674dc54b322e8b986c7d18b5c368ee760",
+    "data_processing/normalized/EX-006/classified_events.jsonl": "e8f5b887fd3f2b5f97b5ca7b47049ded165c172e540bde29736ef819d6834321",
+    "data_processing/normalized/EX-007/classified_events.jsonl": "76128ecaf01347c4ebd3dcc802ef7d555c0733838d9aa4792b4d43ae7317034d",
+    "data_processing/normalized/EX-008/classified_events.jsonl": "6c72b57c49e1884a8d11b39fa58c5d1af29e0109fc5f61b835ea4a7dc2d7e009",
+    "data_processing/normalized/EX-009/classified_events.jsonl": "28dd5b51225baece30ccb2f84b105f6f365dd2c94cf4fee19629934e437da726",
+    "data_processing/normalized/EX-010/classified_events.jsonl": "ebeace6a7cfcba30315a6426a884e0436c8f7c906f4d2adc7f734bcb3785bb0f"
+  },
+  "output_sha256": {
+    "incidents.json": "83a6059241ee5acd3b8fff1fa36a8be9265b3cddd7669d5a4aa97ac31fc54b3e",
+    "shared_evidence_audit.json": "411c05d75563587cfbe1bf592f64b2cf1eb9882cb36dc13562705c60fa265a92",
+    "unresolved_evidence.json": "5cbb9b8ca1d305b3672b36cf73a0473b9cac5f55de7687028c2d11d03ccb5bfc"
+  },
+  "scenario_counts": {
+    "http_data_exfiltration": 12,
+    "ssh_brute_force": 9
+  },
+  "shared_fim_source_count": 16,
+  "snapshot_version": "gantt-2.7-pre-ground-truth-v1",
+  "source_reference_count": 318,
+  "timeline_entry_count": 183,
+  "unresolved_evidence_count": 22
+}

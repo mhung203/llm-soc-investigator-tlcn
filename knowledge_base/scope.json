@@ -1,0 +1,88 @@
+{
+  "evidence_policy": {
+    "factual_findings_require_source_event_ids": true,
+    "ground_truth_access_during_retrieval": false,
+    "http_context_alert_proves_exfiltration": false,
+    "insufficient_evidence_must_be_explicit": true,
+    "knowledge_is_incident_evidence": false,
+    "ssh_auth_failure_proves_compromise": false
+  },
+  "gantt_task": "3.1",
+  "knowledge_record_fields": [
+    "document_id",
+    "title",
+    "scenario",
+    "technique",
+    "behavior",
+    "evidence_to_check",
+    "investigation_steps",
+    "recommendations",
+    "source_reference"
+  ],
+  "out_of_scope": [
+    "General-purpose security chatbot",
+    "Full MITRE ATT&CK database ingestion",
+    "LLM fine-tuning",
+    "Automated containment or remediation",
+    "Using Ground Truth labels as retrieval context"
+  ],
+  "phase_2_reference": {
+    "incident_count": 21,
+    "incidents_sha256": "83a6059241ee5acd3b8fff1fa36a8be9265b3cddd7669d5a4aa97ac31fc54b3e",
+    "source": "data_processing/normalized/incident_correlation_baseline/incidents.json"
+  },
+  "planned_knowledge_sources": [
+    "MITRE ATT&CK references verified in Gantt 3.2",
+    "Investigation playbooks authored in Gantt 3.3"
+  ],
+  "planned_playbooks": [
+    {
+      "id": "PB-SSH-01",
+      "scenario": "ssh_brute_force",
+      "title": "SSH Brute Force Investigation"
+    },
+    {
+      "id": "PB-SSH-02",
+      "scenario": "ssh_brute_force",
+      "title": "SSH Account Compromise Verification"
+    },
+    {
+      "id": "PB-HTTP-01",
+      "scenario": "http_data_exfiltration",
+      "title": "HTTP Data Exfiltration Investigation"
+    },
+    {
+      "id": "PB-TRIAGE-01",
+      "scenario": "both",
+      "title": "General Incident Triage"
+    }
+  ],
+  "purpose": "Provide verified investigation knowledge for SOC incident analysis and LLM context retrieval.",
+  "retrieval_methods": [
+    "incident_type",
+    "keyword",
+    "metadata"
+  ],
+  "schema_version": "1.0",
+  "supported_scenarios": {
+    "http_data_exfiltration": {
+      "incident_count": 12,
+      "observed_security_event_types": [
+        "file_created",
+        "http_file_transfer",
+        "http_post",
+        "http_post_context_alert"
+      ]
+    },
+    "ssh_brute_force": {
+      "incident_count": 9,
+      "observed_security_event_types": [
+        "password_check_failure",
+        "ssh_auth_failure",
+        "ssh_auth_failure_summary",
+        "ssh_disconnect",
+        "ssh_max_retries_exceeded"
+      ]
+    }
+  }
+}

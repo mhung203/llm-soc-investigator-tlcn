@@ -1,0 +1,249 @@
+{
+  "total_incidents": 20,
+  "passed": 20,
+  "failed": 0,
+  "total_merged_events": 903,
+  "results": [
+    {
+      "run_id": "BF-001",
+      "input_directory": "dataset/runs/brute_force/BF-001",
+      "suricata_status": "source_unavailable",
+      "counts": {
+        "wazuh_alerts": 12,
+        "wazuh_archives": 59,
+        "suricata": null
+      },
+      "merged_count": 71,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-002",
+      "input_directory": "dataset/runs/brute_force/BF-002",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 12,
+        "wazuh_archives": 28,
+        "suricata": 18
+      },
+      "merged_count": 58,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-003",
+      "input_directory": "dataset/runs/brute_force/BF-003",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 12,
+        "suricata": 6
+      },
+      "merged_count": 28,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-004",
+      "input_directory": "dataset/runs/brute_force/BF-004",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 19,
+        "suricata": 5
+      },
+      "merged_count": 34,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-005",
+      "input_directory": "dataset/runs/brute_force/BF-005",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 11,
+        "wazuh_archives": 13,
+        "suricata": 5
+      },
+      "merged_count": 29,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-006",
+      "input_directory": "dataset/runs/brute_force/BF-006",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 12,
+        "suricata": 4
+      },
+      "merged_count": 26,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-007",
+      "input_directory": "dataset/runs/brute_force/BF-007",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 9,
+        "wazuh_archives": 12,
+        "suricata": 7
+      },
+      "merged_count": 28,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-008",
+      "input_directory": "dataset/runs/brute_force/BF-008",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 11,
+        "wazuh_archives": 13,
+        "suricata": 6
+      },
+      "merged_count": 30,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-009",
+      "input_directory": "dataset/runs/brute_force/BF-009",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 12,
+        "suricata": 7
+      },
+      "merged_count": 29,
+      "status": "PASS"
+    },
+    {
+      "run_id": "BF-010",
+      "input_directory": "dataset/runs/brute_force/BF-010",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 12,
+        "suricata": 8
+      },
+      "merged_count": 30,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-001",
+      "input_directory": "dataset/runs/data_exfiltration/EX-001/retry-01",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 2,
+        "wazuh_archives": 125,
+        "suricata": 8
+      },
+      "merged_count": 135,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-002",
+      "input_directory": "dataset/runs/data_exfiltration/EX-002",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-003",
+      "input_directory": "dataset/runs/data_exfiltration/EX-003",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-004",
+      "input_directory": "dataset/runs/data_exfiltration/EX-004",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-005",
+      "input_directory": "dataset/runs/data_exfiltration/EX-005",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-006",
+      "input_directory": "dataset/runs/data_exfiltration/EX-006",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-007",
+      "input_directory": "dataset/runs/data_exfiltration/EX-007",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-008",
+      "input_directory": "dataset/runs/data_exfiltration/EX-008",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-009",
+      "input_directory": "dataset/runs/data_exfiltration/EX-009",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    },
+    {
+      "run_id": "EX-010",
+      "input_directory": "dataset/runs/data_exfiltration/EX-010",
+      "suricata_status": "available",
+      "counts": {
+        "wazuh_alerts": 10,
+        "wazuh_archives": 31,
+        "suricata": 4
+      },
+      "merged_count": 45,
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}
